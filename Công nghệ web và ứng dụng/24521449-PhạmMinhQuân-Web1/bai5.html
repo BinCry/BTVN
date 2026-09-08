@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Hoa tươi Hạnh Phúc</title>
+    <style>
+        @font-face {
+            font-family: 'UTM Wedding KT';
+            src: url('fonts/UTM Wedding K&T.ttf') format('truetype');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #ffffff;
+            background-image: url('images/nen-hoa-hong.jpg');
+            background-repeat: no-repeat;
+            background-position: right bottom;
+            background-size: auto 90vh;
+            min-height: 100vh;
+            padding: 20px 40px;
+            color: #000000;
+        }
+
+        .main-wrapper {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .title-container {
+            text-align: center;
+            margin-bottom: 25px;
+            padding-left: 50px;
+        }
+
+        .shop-title {
+            font-family: 'UTM Wedding KT', 'Brush Script MT', cursive, sans-serif;
+            font-size: 56px;
+            color: #ffffff;
+            text-shadow: 
+                0 0 2px #ff007f,
+                0 0 5px #ff007f,
+                0 0 10px #ff007f,
+                0 0 18px #ff1493,
+                0 0 25px #ff69b4;
+            letter-spacing: 2px;
+            display: inline-block;
+        }
+
+        .content-layout {
+            display: flex;
+            align-items: flex-start;
+            gap: 40px;
+        }
+
+        .left-vase {
+            flex-shrink: 0;
+        }
+
+        .left-vase img {
+            width: 320px;
+            height: auto;
+            display: block;
+        }
+
+        .right-info {
+            flex: 1;
+            max-width: 480px;
+            padding-top: 10px;
+        }
+
+        .section-header {
+            font-size: 15px;
+            font-weight: bold;
+            margin-bottom: 8px;
+            display: flex;
+            align-items: center;
+        }
+
+        .section-badge {
+            background-color: #ff007f;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 2px 8px;
+            margin-left: 5px;
+            font-size: 15px;
+            display: inline-block;
+        }
+
+        .custom-list {
+            list-style: none;
+            margin-left: 20px;
+            margin-bottom: 15px;
+            font-size: 14px;
+            line-height: 1.8;
+        }
+
+        .custom-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 4px;
+        }
+
+        .list-hoa li::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 4px;
+            width: 14px;
+            height: 14px;
+            background: url('images/bullet-hoa-tim.png') no-repeat center center;
+            background-size: contain;
+        }
+
+        .list-hong li::before {
+            content: '';
+            position: absolute;
+            left: 2px;
+            top: 5px;
+            width: 10px;
+            height: 10px;
+            background: url('images/bullet-tron-hong.png') no-repeat center center;
+            background-size: contain;
+        }
+
+        .divider-line {
+            border: 0;
+            border-top: 1px solid #ff66b2;
+            margin: 12px 0 15px 0;
+            width: 100%;
+        }
+
+        .copyright-text {
+            font-size: 13px;
+            margin-top: 20px;
+            color: #000000;
+        }
+
+        .copyright-text .company-name {
+            color: #ff007f;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="title-container">
+            <h1 class="shop-title">Shop Hoa tươi Hạnh Phúc</h1>
+        </div>
+
+        <div class="content-layout">
+            <div class="left-vase">
+                <img src="images/binh-hoa.jpg" alt="Bình hoa hồng tươi">
+            </div>
+
+            <div class="right-info">
+                <div class="section-header">
+                    <span>1.</span>
+                    <span class="section-badge">Giới thiệu</span>
+                </div>
+                <ul class="custom-list list-hoa">
+                    <li>Thành lập ngày 01/07/2014</li>
+                    <li>Chuyên cung cấp các loại hoa tươi</li>
+                    <li>Có trên 20 cửa hàng bán lẻ tại TP.HCM</li>
+                    <li>Nhận kết giỏ hoa theo yêu cầu của khách hàng</li>
+                </ul>
+
+                <hr class="divider-line">
+
+                <div class="section-header">
+                    <span>2.</span>
+                    <span class="section-badge">Liên hệ</span>
+                </div>
+                <ul class="custom-list list-hong">
+                    <li>Địa chỉ: <b>245 Nguyễn Văn Cừ Q5, TP.HCM</b></li>
+                    <li>Điện thoại: (08)39404272</li>
+                    <li>Fax: (08)62619416 (Ext. 115)</li>
+                </ul>
+
+                <div class="copyright-text">
+                    &copy; Copyright: <span class="company-name">Công Ty Tin Học ABC</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

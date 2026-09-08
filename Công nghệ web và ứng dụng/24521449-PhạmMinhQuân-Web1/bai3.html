@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Định dạng văn bản</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Times New Roman', Times, Georgia, serif;
+            background-color: #ffffff;
+            padding: 40px 20px;
+        }
+        .main-title {
+            color: #00cc00;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 35px;
+        }
+        .content-container {
+            max-width: 650px;
+            margin: 0 auto;
+            font-size: 18px;
+            line-height: 2.2;
+        }
+        .red-text {
+            color: #ff0000;
+        }
+        .code-box {
+            background-color: #d9d9d9;
+            color: #0000ff;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.8;
+            padding: 20px 30px;
+            margin-top: 10px;
+            border-radius: 0;
+            white-space: pre;
+        }
+    </style>
+</head>
+<body>
+    <h1 class="main-title">Định dạng văn bản</h1>
+    
+    <div class="content-container">
+        <div>
+            <u><b>Hóa học:</b></u> <i>Nước:</i> <span class="red-text">H<sub>2</sub>O</span> ; <i>Axit Sunfuric:</i> <span class="red-text">H<sub>2</sub>SO<sub>4</sub></span>
+        </div>
+        
+        <div>
+            <u><b>Toán học:</b></u> <i>Phương trình bậc 2:</i> <span class="red-text">ax<sup>2</sup> + bx + c = 0</span>
+        </div>
+        
+        <div>
+            <u><b>Tin học:</b></u> <i>Vòng lặp for:</i>
+        </div>
+
+        <div class="code-box">int tong = 0;
+for(int i = 1; i &lt;= 10; i++)
+	tong += i; 
+printf("Tong cac so tu 1 =&gt; 10 la: %d\n",tong);</div>
+    </div>
+</body>
+</html>

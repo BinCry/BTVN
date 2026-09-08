@@ -1,0 +1,51 @@
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE & Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Node / Web
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+dist/
+build/
+.next/
+out/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+.venv
+env/
+venv/
+ENV/
+
+# C / C++
+*.obj
+*.exe
+*.o
+*.out
+*.app
+*.dll
+*.dylib
+
+# Java
+*.class
+*.jar
+*.war
+*.ear
+
+# Logs
+*.log
