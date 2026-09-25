@@ -7,9 +7,13 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body id="top">
-  <audio id="background-audio" autoplay loop preload="auto">
+  <audio id="background-audio" loop preload="auto">
     <source src="audio/HelloVietNam-QuynhAnh.mp3" type="audio/mpeg">
   </audio>
+  <button class="sound-control" id="sound-control" type="button" aria-label="Bật âm thanh" aria-pressed="false" title="Bật âm thanh">
+    <svg class="sound-icon sound-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="m18 9 4 6m0-6-4 6"></path></svg>
+    <svg class="sound-icon sound-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9v6h4l5 4V5L8 9H4z"></path><path d="M17 9a5 5 0 0 1 0 6m3-9a9 9 0 0 1 0 12"></path></svg>
+  </button>
   <section id="vietnam" class="country">
     <h1>Việt Nam - Đất nước - Con người</h1>
     <div class="overview">
@@ -98,11 +102,23 @@
   </section>
   <script>
     const backgroundAudio = document.getElementById("background-audio");
-    const playBackgroundAudio = () => backgroundAudio.play().catch(() => {});
-    window.addEventListener("load", playBackgroundAudio);
-    window.addEventListener("pageshow", playBackgroundAudio);
-    document.addEventListener("pointerdown", playBackgroundAudio, { once: true });
-    document.addEventListener("keydown", playBackgroundAudio, { once: true });
+    const soundControl = document.getElementById("sound-control");
+    soundControl.addEventListener("click", () => {
+      if (backgroundAudio.paused) {
+        backgroundAudio.play().then(() => {
+          soundControl.classList.add("is-on");
+          soundControl.setAttribute("aria-label", "Tắt âm thanh");
+          soundControl.setAttribute("aria-pressed", "true");
+          soundControl.title = "Tắt âm thanh";
+        }).catch(() => {});
+      } else {
+        backgroundAudio.pause();
+        soundControl.classList.remove("is-on");
+        soundControl.setAttribute("aria-label", "Bật âm thanh");
+        soundControl.setAttribute("aria-pressed", "false");
+        soundControl.title = "Bật âm thanh";
+      }
+    });
   </script>
 </body>
 </html>
