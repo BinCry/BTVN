@@ -98,7 +98,11 @@
   </section>
   <script>
     const backgroundAudio = document.getElementById("background-audio");
-    document.addEventListener("click", () => backgroundAudio.play(), { once: true });
+    const playBackgroundAudio = () => backgroundAudio.play().catch(() => {});
+    window.addEventListener("load", playBackgroundAudio);
+    window.addEventListener("pageshow", playBackgroundAudio);
+    document.addEventListener("pointerdown", playBackgroundAudio, { once: true });
+    document.addEventListener("keydown", playBackgroundAudio, { once: true });
   </script>
 </body>
 </html>
