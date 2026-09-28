@@ -2,7 +2,7 @@
 body { min-height: 100vh; margin: 0; overflow-x: hidden; background-color: #aa0000; background-image: linear-gradient(rgba(170, 0, 0, .42), rgba(170, 0, 0, .42)), url("images/nen-hoa-hong.png"); background-position: right bottom; background-size: auto, clamp(1100px, 85.94vw, 1650px) auto; background-repeat: no-repeat; color: white; font-family: Arial, sans-serif; }
 .woman { position: absolute; z-index: 1; top: clamp(131px, 10.23vw, 196px); left: 0; width: clamp(384px, 30vw, 576px); height: auto; }
 .rose { position: absolute; z-index: 1; top: clamp(588px, 45.94vw, 881px); left: clamp(106px, 8.28vw, 159px); width: clamp(300px, 23.44vw, 450px); height: auto; }
-.card { position: relative; z-index: 2; width: clamp(720px, 56.25vw, 1080px); height: clamp(535px, 41.8vw, 803px); margin: clamp(120px, 9.38vw, 180px) 0 0 25vw; border: 1px solid white; background: rgba(170, 0, 0, .78); }
+.card { position: relative; z-index: 2; width: clamp(720px, 56.25vw, 1080px); height: clamp(535px, 41.8vw, 803px); margin: clamp(120px, 9.38vw, 180px) 0 0 25vw; border: 1px solid white; background: linear-gradient(#f0c5ef, #f0c5ef) top / 100% clamp(80px, 6.25vw, 120px) no-repeat, rgba(170, 0, 0, .78); }
 header { position: relative; z-index: 4; width: 70%; height: clamp(80px, 6.25vw, 120px); padding-right: 2%; background: #f10a08; text-align: right; line-height: clamp(80px, 6.25vw, 120px); font-size: clamp(23px, 1.8vw, 35px); font-weight: bold; }
 .brand { position: relative; z-index: 4; height: clamp(93px, 7.27vw, 140px); background: #f0c5ef; color: #e60000; }
 .brand h1 { margin: 0; padding: clamp(25px, 1.95vw, 37px) 0 0 3.2%; font-size: clamp(33px, 2.58vw, 50px); }
