@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Phiếu đăng ký</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Phiếu đăng ký</h1>
+        <form id="registration-form" class="registration-card">
+            <div class="field">
+                <label for="full-name">Họ tên</label>
+                <input id="full-name" name="full-name" type="text" required autofocus>
+            </div>
+            <div class="field field-address">
+                <label for="address">Địa chỉ</label>
+                <textarea id="address" name="address" required></textarea>
+            </div>
+            <div class="field">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" required>
+            </div>
+            <div class="field">
+                <label for="phone">Điện thoại</label>
+                <input id="phone" name="phone" type="tel" inputmode="tel" required>
+            </div>
+            <div class="field gender-field">
+                <span id="gender-label">Giới tính</span>
+                <div class="gender-options" role="radiogroup" aria-labelledby="gender-label">
+                    <label><input type="radio" name="gender" value="Nam" checked> Nam</label>
+                    <label><input type="radio" name="gender" value="Nữ"> Nữ</label>
+                </div>
+            </div>
+            <div class="field">
+                <label for="job">Nghề nghiệp</label>
+                <select id="job" name="job">
+                    <option>Sinh viên</option>
+                    <option>Bác sĩ</option>
+                    <option>Kỹ sư</option>
+                    <option>Giáo viên</option>
+                    <option>Khác</option>
+                </select>
+            </div>
+            <div class="field products">
+                <label for="product">Chọn sản phẩm</label>
+                <select id="product" name="product" size="4">
+                    <option selected>Kem đánh răng</option>
+                    <option>Dầu gội</option>
+                    <option>Sữa tắm</option>
+                    <option>Bột giặt</option>
+                </select>
+            </div>
+            <div class="field">
+                <label for="attendees">Dự đoán số người tham gia</label>
+                <input id="attendees" name="attendees" type="number" min="1" value="1" required>
+            </div>
+            <div class="actions">
+                <button type="submit">Đăng ký</button>
+                <button type="reset">Làm lại</button>
+            </div>
+            <p id="form-status" aria-live="polite"></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+    <script src="../frame-status.js"></script>
+</body>
+</html>

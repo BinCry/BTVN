@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="vi">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Đăng ký du lịch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body data-background="bg3">
+    <main class="travel-page">
+        <h1>ĐĂNG KÝ DU LỊCH</h1>
+        <form id="travel-form" class="travel-form">
+            <div class="field name-field">
+                <label for="traveler-name">Họ tên</label>
+                <input id="traveler-name" name="traveler-name" type="text" required autofocus>
+            </div>
+            <div class="field address">
+                <label for="traveler-address">Địa chỉ</label>
+                <textarea id="traveler-address" name="traveler-address" required></textarea>
+            </div>
+            <div class="field phone-field">
+                <label for="traveler-phone">Điện thoại</label>
+                <input id="traveler-phone" name="traveler-phone" type="tel" inputmode="tel" required>
+            </div>
+            <div class="field checkbox-field">
+                <label for="domestic">Khách Việt Nam</label>
+                <input id="domestic" name="domestic" type="checkbox" checked>
+            </div>
+            <div class="field tour-field">
+                <label for="tour">Chọn tour</label>
+                <select id="tour" name="tour">
+                    <optgroup label="Miền Bắc">
+                        <option value="bg3">Hà Nội - Hạ Long - Sapa</option>
+                        <option value="bg3">Hà Nội - Chùa Hương - Ninh Bình</option>
+                        <option value="bg3">Hà Nội - Cát Bà - Tuần Châu</option>
+                    </optgroup>
+                    <optgroup label="Miền Trung">
+                        <option value="bg1">Huế - Bạch Mã - Đà Nẵng</option>
+                        <option value="bg1">Nha Trang - Đà Lạt</option>
+                        <option value="bg1">Buôn Mê Thuột - Gia Lai - Kontum</option>
+                    </optgroup>
+                    <optgroup label="Miền Nam">
+                        <option value="bg2">TpHCM - Cần Thơ - Cà Mau</option>
+                        <option value="bg2">Phú Quốc - Côn Đảo</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="field transport">
+                <span id="transport-label">Phương tiện</span>
+                <div class="transport-options" role="radiogroup" aria-labelledby="transport-label">
+                    <label><input type="radio" name="transport" value="Máy bay" checked> Máy bay</label>
+                    <label><input type="radio" name="transport" value="Xe du lịch"> Xe du lịch</label>
+                    <label><input type="radio" name="transport" value="Tự túc"> Tự túc</label>
+                </div>
+            </div>
+            <fieldset class="guests">
+                <legend>Số lượng khách đoàn</legend>
+                <div class="guest-fields">
+                    <div class="guest-count">
+                        <label for="adults">Người lớn</label>
+                        <input id="adults" name="adults" type="number" min="1" value="1" required>
+                    </div>
+                    <div class="guest-count">
+                        <label for="children">Trẻ em</label>
+                        <input id="children" name="children" type="number" min="0" value="1" required>
+                    </div>
+                </div>
+            </fieldset>
+            <div class="field note">
+                <label for="extra-note">Ghi chú thêm</label>
+                <textarea id="extra-note" name="extra-note"></textarea>
+            </div>
+            <button type="submit">Đồng ý</button>
+            <p id="travel-status" aria-live="polite"></p>
+        </form>
+    </main>
+    <script src="script.js"></script>
+    <script src="../frame-status.js"></script>
+</body>
+</html>

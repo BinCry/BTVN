@@ -1,0 +1,28 @@
+* { box-sizing: border-box; }
+body { min-height: 100vh; margin: 0; overflow-x: hidden; background-color: #aa0000; background-image: linear-gradient(rgba(170, 0, 0, .42), rgba(170, 0, 0, .42)), url("images/nen-hoa-hong.png"); background-position: right bottom; background-size: auto, clamp(1100px, 85.94vw, 1650px) auto; background-repeat: no-repeat; color: white; font-family: Arial, sans-serif; }
+.woman { position: absolute; z-index: 1; top: clamp(131px, 10.23vw, 196px); left: 0; width: clamp(384px, 30vw, 576px); height: auto; }
+.rose { position: absolute; z-index: 1; top: clamp(588px, 45.94vw, 881px); left: clamp(106px, 8.28vw, 159px); width: clamp(300px, 23.44vw, 450px); height: auto; }
+.card { position: relative; z-index: 2; width: clamp(720px, 56.25vw, 1080px); height: clamp(535px, 41.8vw, 803px); margin: clamp(120px, 9.38vw, 180px) 0 0 25vw; border: 1px solid white; background: linear-gradient(#f0c5ef, #f0c5ef) top / 100% clamp(80px, 6.25vw, 120px) no-repeat, rgba(170, 0, 0, .78); }
+header { position: relative; z-index: 4; width: 70%; height: clamp(80px, 6.25vw, 120px); padding-right: 2%; background: #f10a08; text-align: right; line-height: clamp(80px, 6.25vw, 120px); font-size: clamp(23px, 1.8vw, 35px); font-weight: bold; }
+.brand { position: relative; z-index: 4; height: clamp(93px, 7.27vw, 140px); background: #f0c5ef; color: #e60000; }
+.brand h1 { margin: 0; padding: clamp(25px, 1.95vw, 37px) 0 0 3.2%; font-size: clamp(33px, 2.58vw, 50px); }
+.gift { position: absolute; z-index: 5; top: 3.5%; right: 1.1%; width: 28%; height: auto; }
+.columns { position: relative; z-index: 4; display: grid; grid-template-columns: 1.05fr 1fr; gap: 5%; padding: 3.5% 4% 5%; font-size: clamp(16px, 1.25vw, 24px); line-height: 1.25; }
+h2 { margin: 0 0 5%; color: #ee0000; font-size: .95em; }
+ul, ol { margin: 0; padding-left: 2.3em; }
+li { margin-bottom: .5em; }
+.columns section:last-child ol { font-size: .95em; line-height: 1.32; }
+@media (max-width: 1000px) {
+  .woman { width: 38vw; top: 170px; }
+  .rose { top: 610px; left: 8vw; width: 26vw; }
+  .card { width: 70vw; height: auto; min-height: 535px; margin-left: 27vw; }
+}
+@media (max-width: 800px) {
+  body { background-size: auto, 900px auto; }
+  .woman, .rose { opacity: .45; }
+  .card { width: 92%; height: auto; min-height: 0; margin: 30px auto; }
+  header { width: 100%; padding-right: 0; text-align: center; }
+  .gift { top: 1%; width: 24%; }
+  .brand h1 { font-size: clamp(24px, 6vw, 33px); }
+  .columns { grid-template-columns: 1fr; font-size: 16px; }
+}

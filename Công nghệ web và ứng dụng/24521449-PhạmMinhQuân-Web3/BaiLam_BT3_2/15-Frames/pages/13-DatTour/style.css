@@ -1,0 +1,321 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: clamp(12px, min(0.8346vw, 1.686vh), 24px);
+}
+
+body {
+    display: flow-root;
+    min-height: 100vh;
+    margin: 0;
+    background: #0873bd url('hinh/bg3.jpg') center / cover fixed no-repeat;
+    color: #00f;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 1px #fff;
+}
+
+body[data-background='bg1'] {
+    background-image: url('hinh/bg1.jpg');
+}
+
+body[data-background='bg2'] {
+    background-image: url('hinh/bg2.jpg');
+}
+
+body[data-background='bg3'] {
+    background-image: url('hinh/bg3.jpg');
+}
+
+.travel-page {
+    width: 48rem;
+    max-width: calc(100% - 28px);
+    margin: 3.0625rem auto 4.375rem;
+}
+
+h1 {
+    margin: 0 0 1.25rem;
+    color: #ffa500;
+    font-size: 2rem;
+    line-height: 2.375rem;
+    text-align: center;
+    text-shadow: 1px 1px 2px #fff, 0 0 0.25rem #fff;
+}
+
+.travel-form {
+    padding: 0.9375rem 0.75rem 0.6875rem;
+    border: 1px solid #fff;
+    border-radius: 1.25rem;
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 0 0.3125rem rgba(255, 255, 255, 0.8);
+}
+
+.field {
+    display: grid;
+    grid-template-columns: 9.9375rem minmax(0, 1fr);
+    align-items: center;
+    column-gap: 1.5rem;
+}
+
+.field > label,
+.field > span,
+.guests legend,
+.guest-count label {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.field > label,
+.field > span {
+    text-align: right;
+}
+
+input:not([type='checkbox']):not([type='radio']),
+textarea,
+select {
+    display: block;
+    max-width: 100%;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 0.625rem;
+    background: rgba(255, 165, 0, 0.25);
+    color: #00f;
+    font: 0.875rem Arial, Helvetica, sans-serif;
+}
+
+input:not([type='checkbox']):not([type='radio']) {
+    width: 12.5625rem;
+    height: 1.75rem;
+    padding: 0.25rem 0.3125rem;
+}
+
+#traveler-name {
+    width: 15.0625rem;
+}
+
+textarea {
+    width: 26.6875rem;
+    height: 4rem;
+    padding: 0.3125rem;
+    resize: vertical;
+}
+
+#tour {
+    width: 17.125rem;
+    height: 1.875rem;
+    padding: 0.25rem 0.3125rem;
+    font-weight: 700;
+}
+
+#tour option,
+#tour optgroup {
+    background: #fff;
+}
+
+.name-field {
+    margin-bottom: 1.875rem;
+}
+
+.address {
+    margin-bottom: 2.0625rem;
+}
+
+.phone-field {
+    margin-bottom: 1.625rem;
+}
+
+.checkbox-field {
+    min-height: 1.375rem;
+    margin-bottom: 1.5625rem;
+}
+
+input[type='checkbox'],
+input[type='radio'] {
+    width: 0.8125rem;
+    height: 0.8125rem;
+    margin: 0;
+    accent-color: #008cff;
+    cursor: pointer;
+}
+
+.tour-field {
+    margin-bottom: 1.5rem;
+}
+
+.transport {
+    min-height: 1.375rem;
+    margin-bottom: 1.1875rem;
+}
+
+.transport-options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.transport-options label {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4375rem;
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.guests {
+    min-width: 0;
+    height: 6.625rem;
+    margin: 0 0 1.5625rem;
+    padding: 1.625rem 0.75rem 1rem;
+    border: 2px groove rgba(255, 255, 255, 0.85);
+}
+
+.guests legend {
+    padding: 0 0.125rem;
+}
+
+.guest-fields,
+.guest-count {
+    display: flex;
+    align-items: center;
+    gap: 0.625rem;
+}
+
+.guest-count label {
+    white-space: nowrap;
+}
+
+.note {
+    margin-bottom: 1.8125rem;
+}
+
+.note textarea {
+    height: 6.0625rem;
+}
+
+button {
+    display: block;
+    width: 4.125rem;
+    height: 2.1875rem;
+    margin: 0 auto;
+    padding: 0;
+    border: 0;
+    border-radius: 0.625rem;
+    background: #ffa500;
+    color: #fff;
+    font: 0.875rem 'Times New Roman', serif;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #ef9200;
+}
+
+input:not([type='checkbox']):not([type='radio']):focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+    outline: 2px solid #222;
+    outline-offset: -2px;
+    box-shadow: 0 0 0 1px #fff;
+}
+
+button:focus-visible,
+input[type='checkbox']:focus-visible,
+input[type='radio']:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 3px;
+}
+
+#travel-status {
+    margin: 0.75rem 0 0;
+    color: #f00;
+    text-align: center;
+    font-weight: 700;
+}
+
+#travel-status:empty {
+    display: none;
+}
+
+@media (max-width: 700px) {
+    html {
+        font-size: 16px;
+    }
+
+    .travel-page {
+        width: auto;
+        margin-top: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.625rem;
+    }
+
+    .travel-form {
+        padding: 1.25rem;
+    }
+
+    .field {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.5rem;
+        margin-bottom: 1.25rem;
+    }
+
+    .field > label,
+    .field > span {
+        text-align: left;
+    }
+
+    input:not([type='checkbox']):not([type='radio']),
+    #traveler-name,
+    textarea,
+    #tour {
+        width: 100%;
+        font-size: 1rem;
+    }
+
+    input:not([type='checkbox']):not([type='radio']),
+    #tour {
+        height: 2.75rem;
+    }
+
+    .checkbox-field {
+        grid-template-columns: auto 1fr;
+        min-height: 2.75rem;
+    }
+
+    .transport-options {
+        gap: 0.25rem 0.75rem;
+    }
+
+    .transport-options label {
+        min-height: 2.75rem;
+    }
+
+    .guests {
+        height: auto;
+        margin-bottom: 1.25rem;
+        padding: 0.75rem;
+    }
+
+    .guest-fields {
+        align-items: stretch;
+        flex-direction: column;
+    }
+
+    .guest-count {
+        display: grid;
+        grid-template-columns: 5rem minmax(0, 1fr);
+    }
+
+    button {
+        min-width: 5rem;
+        height: 2.75rem;
+        font-size: 1rem;
+    }
+}

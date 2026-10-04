@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    min-height: 100%;
+    background: #a5fc2c;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    background: url('images/nen-hoa-muc-luc.png') left bottom / 100% auto no-repeat,
+                url('images/bg-mucluc.png') left top / 100% 100% no-repeat;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 7.5px;
+    padding: 14px 18px 72px;
+}
+
+nav a {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-shrink: 0;
+    width: 215px;
+    max-width: 100%;
+    min-height: 31px;
+    padding: 5px 12px 5px 16px;
+    background: url('images/nen-lien-ket-muc-luc.png') left center / 100% 100% no-repeat;
+    color: #fff;
+    font-size: clamp(13px, 6.25vw, 16px);
+    font-weight: 700;
+    line-height: 21px;
+    text-decoration: none;
+    text-shadow: 1px 1px 2px #333;
+}
+
+nav a::before {
+    content: '•';
+}
+
+nav a:hover,
+nav a[aria-current='page'] {
+    background-image: url('images/nen-lien-ket-muc-luc-over.png');
+    color: #ff80ff;
+}
+
+nav a:focus-visible {
+    outline: 2px solid #fff;
+    outline-offset: 2px;
+}
+
+@media (max-width: 220px) {
+    nav {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    nav a {
+        gap: 5px;
+        padding-left: 10px;
+    }
+}
+
+.leaf-menu {
+    font-size: clamp(12px, 6.25vw, 16px);
+}
+
+.leaves nav {
+    gap: 0;
+    min-height: 25.375rem;
+    padding: 3.75rem 1.5rem 3.75rem;
+    background: url('images/nen-menu.png') center top / 100% auto no-repeat;
+}
+
+.leaves nav a {
+    justify-content: center;
+    width: 100%;
+    min-height: 1.375rem;
+    padding: 0;
+    background: none;
+    font-size: 0.875rem;
+    font-style: italic;
+    line-height: 1.375rem;
+    text-align: center;
+}
+
+.leaves nav a::before {
+    content: none;
+}
+
+.leaves nav a:hover,
+.leaves nav a[aria-current='page'] {
+    color: #ff0;
+}
+
+.paper {
+    background: #86ef00;
+}
+
+.paper img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.paper-menu {
+    position: relative;
+}
+
+.paper-outline {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    fill: none;
+    stroke: #555;
+    stroke-width: 1;
+    stroke-dasharray: 2 2;
+}
+
+.paper-outline polygon {
+    vector-effect: non-scaling-stroke;
+}

@@ -1,0 +1,68 @@
+* { box-sizing: border-box; }
+body { margin: 8px; color: #000; font: 16px/20px Arial, sans-serif; background: white url("images/co-vietnam.png") no-repeat fixed center center; }
+#background-audio { display: none; }
+.sound-control { position: fixed; top: 12px; left: 12px; z-index: 100; display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; padding: 0; border: 1px solid #999; border-radius: 4px; background: #fff; color: #333; cursor: pointer; box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
+.sound-control:hover { background: #f2f2f2; }
+.sound-control:focus-visible { outline: 2px solid #00e; outline-offset: 2px; }
+.sound-icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+.sound-on { display: none; }
+.sound-control.is-on .sound-off { display: none; }
+.sound-control.is-on .sound-on { display: block; }
+h1 { margin: 13px 0 22px; color: red; text-align: center; font-size: 32px; line-height: 38px; }
+h2 { margin: 6px 0 18px; padding: 5px 15px; background: red; color: white; font-size: 24px; line-height: 29px; }
+p { margin: 16px 0; }
+a { color: #00e; }
+a:visited, .page-nav > a, .column-top a { color: #551a8b; }
+a:focus-visible { outline: 2px solid #00e; outline-offset: 3px; }
+section { display: flow-root; }
+.overview { display: flow-root; }
+.map { position: relative; float: left; width: 320px; height: 495px; margin-right: 20px; }
+.map-image { display: block; margin-left: 50px; }
+.map-hanoi { position: absolute; left: 132px; top: 62px; width: 30px; height: 20px; }
+.map-hanoi img { display: block; }
+.map-hue { position: absolute; left: 190px; top: 190px; width: 26px; height: 28px; }
+.map-hcm { position: absolute; left: 182px; top: 402px; width: 28px; height: 28px; border-radius: 50%; }
+.contents { margin: 0 0 16px 340px; padding: 0; }
+.overview p:last-child { margin-bottom: 0; }
+.world { float: right; width: 250px; height: auto; margin: 0 0 12px 12px; }
+.initial { float: left; width: 71px; height: 95px; object-fit: contain; }
+.hanoi .initial { height: 80px; }
+.lake { float: left; width: 24.5%; height: auto; margin: 0 15px 10px 0; }
+.mausoleum { float: right; width: 28.2%; height: auto; margin: 0 0 0 15px; }
+.hue h2 { background: #a000cc; }
+.bridge { clear: both; margin: 16px 0; text-align: center; }
+.bridge img { display: block; width: 715px; max-width: 100%; height: auto; margin: auto; }
+.bridge figcaption { margin-top: 20px; font-weight: bold; font-style: italic; }
+.palace { float: left; width: 32%; height: auto; margin: 0 15px 10px 0; }
+.corridor { float: right; width: 32%; height: auto; aspect-ratio: 16 / 9; margin: 0 0 10px 15px; }
+.hcm { min-height: calc(100vh - 8px); }
+.hcm h2 { margin-top: 5px; margin-bottom: 15px; background: #ff00cc; }
+.columns { column-count: 3; column-gap: 16px; column-rule: 1px dashed #aaa; }
+.columns p { margin: 0 0 16px; }
+.columns p:first-child { margin-top: 16px; }
+.columns .initial { width: 57px; height: 76px; }
+.market { display: block; width: calc(100% - 8px); height: auto; aspect-ratio: 3 / 2; margin: 0 0 16px; break-inside: avoid; }
+.column-top { text-align: right; }
+.page-nav { clear: both; display: flex; align-items: center; justify-content: space-between; min-height: 22px; margin: 16px 0 8px; }
+.nav-buttons { display: flex; gap: 8px; }
+.nav-buttons a, .nav-buttons img { display: block; width: 22px; height: 22px; }
+@media (max-width: 800px) {
+  h1 { font-size: 28px; }
+  .map { width: 270px; margin-right: 15px; }
+  .map-image { margin-left: 15px; }
+  .map-hanoi { left: 97px; }
+  .map-hue { left: 155px; }
+  .map-hcm { left: 147px; }
+  .contents { margin-left: 285px; }
+  .columns { column-count: 2; }
+  .corridor { height: auto; }
+}
+@media (max-width: 550px) {
+  .map { float: none; margin: 0 auto 20px; }
+  .contents { margin-left: 24px; }
+  h1 { font-size: 25px; line-height: 32px; }
+  h2 { font-size: 21px; }
+  .world { width: 38%; }
+  .lake, .mausoleum, .palace, .corridor { width: 45%; }
+  .columns { column-count: 1; }
+}
