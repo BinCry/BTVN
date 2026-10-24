@@ -44,22 +44,40 @@ BTVN/
 │   ├── 📂 24521449-PhạmMinhQuân-Web2/
 │   │   ├── 📂 BT2_1_BaiLam/
 │   │   └── 📂 BT2_2_BaiLam/
-│   └── 📂 24521449-PhạmMinhQuân-Web3/
-│       ├── 📂 BaiLam_BT3_1/
-│       │   ├── 📂 11-FormDangNhap/
-│       │   ├── 📂 12-PhieuDangKy/
-│       │   └── 📂 13-DatTour/
-│       └── 📂 BaiLam_BT3_2/
-│           ├── 📂 14-SCAALCoffee/
-│           └── 📂 15-Frames/
-│               ├── 📄 index.html
-│               ├── 📄 header.html
-│               ├── 📄 menu.html
-│               ├── 📄 menu-paper.html
-│               ├── 📄 menu-leaves.html
-│               ├── 📂 pages/ (13 bài tập)
-│               ├── 📂 images/
-│               └── 📂 audio/
+│   ├── 📂 24521449-PhạmMinhQuân-Web3/
+│   │   ├── 📂 BaiLam_BT3_1/
+│   │   │   ├── 📂 11-FormDangNhap/
+│   │   │   ├── 📂 12-PhieuDangKy/
+│   │   │   └── 📂 13-DatTour/
+│   │   └── 📂 BaiLam_BT3_2/
+│   │       ├── 📂 14-SCAALCoffee/
+│   │       └── 📂 15-Frames/
+│   │           ├── 📄 index.html
+│   │           ├── 📄 header.html
+│   │           ├── 📄 menu.html
+│   │           ├── 📄 menu-paper.html
+│   │           ├── 📄 menu-leaves.html
+│   │           ├── 📂 pages/ (13 bài tập)
+│   │           ├── 📂 images/
+│   │           └── 📂 audio/
+│   └── 📂 24521449-PhạmMinhQuân-Web4/
+│       ├── 📂 BaiLam_Phan1/
+│       │   ├── 📂 14-SCAALCoffee/
+│       │   │   ├── 📄 index.html, story.html, products.html, thisweek.html
+│       │   │   ├── 📄 style.css
+│       │   │   └── 📂 images/
+│       │   └── 📂 15-Frames/
+│       │       ├── 📄 index.html, style.css, script.js
+│       │       ├── 📂 pages/ (gioithieu.html, responsive.css và 13 bài tập)
+│       │       ├── 📂 images/
+│       │       └── 📂 audio/
+│       └── 📂 BaiLam_Phan2/ (Somewhere Coffee Shop)
+│           ├── 📄 index.html, home.html
+│           ├── 📄 about.html, location.html, menu.html, contact.html
+│           ├── 📄 blackcoffee.html
+│           ├── 📄 style.css, script.js
+│           ├── 📂 images/
+│           └── 📂 fonts/
 ├── 📄 .gitignore
 └── 📄 README.md
 ```
@@ -122,6 +140,22 @@ Mở `BaiLam_BT3_2/15-Frames/index.html` để xem đầy đủ ba khung: tiêu 
 - Thư mục `15-Frames/pages/` chứa bản sao các bài và tài nguyên cần thiết. Bài 15 chạy độc lập, không cần liên kết sang thư mục Web1 hoặc Web2; bản bài làm tuần trước được giữ nguyên.
 
 Bài 15 giữ `frame`/`frameset` theo chủ đề thực hành HTML cũ. Các bài khác dùng trang HTML riêng; không cần mở thông qua bài 15.
+
+### Web4 — HTML5, CSS3 và responsive
+
+Web4 gồm hai thư mục bài nộp, có bố cục thích ứng với desktop, tablet và mobile:
+
+| Phần | Bài tập | File cần mở |
+| :--- | :--- | :--- |
+| Phần 1 | 14 — SCAAL Coffee | [14-SCAALCoffee/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web4/BaiLam_Phan1/14-SCAALCoffee/index.html>) |
+| Phần 1 | 15 — Frames | [15-Frames/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web4/BaiLam_Phan1/15-Frames/index.html>) |
+| Phần 2 | Somewhere Coffee Shop | [BaiLam_Phan2/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web4/BaiLam_Phan2/index.html>) |
+
+- **SCAAL Coffee:** bốn trang Home, Our story, Products và This week; menu đổi sang hàng ngang trên mobile.
+- **Frames:** dùng bố cục HTML5 và `iframe` để hiển thị trang giới thiệu cùng 13 bài tập. Trên mobile, bấm nút **☰** để mở mục lục; nhạc nền được bật/tắt thủ công.
+- **Somewhere Coffee Shop:** các trang Home, About, Location, Menu, Contact và chi tiết đồ uống. `index.html` và `home.html` cùng hiển thị trang chủ. Slideshow có nút chuyển ảnh, chọn ảnh và **Play/Pause**; trang đồ uống cho chọn kích cỡ, số lượng và tính tổng tiền.
+- Form liên hệ và đặt đồ uống là bản minh họa phía trình duyệt, chưa gửi dữ liệu đến máy chủ hoặc thực hiện thanh toán.
+- Tài nguyên cần thiết nằm trong từng phần. Hai ảnh `menu-reference.jpg` và `location-map-reference.jpg` đang được dùng để hiển thị ảnh sản phẩm và bản đồ, cần giữ trong bài nộp.
 
 ### Quy ước đặt tên bài nộp (Khuyến nghị):
 
