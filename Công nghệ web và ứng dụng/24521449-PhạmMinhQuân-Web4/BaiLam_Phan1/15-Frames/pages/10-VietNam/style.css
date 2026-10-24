@@ -1,0 +1,60 @@
+* { box-sizing: border-box; }
+body { margin: 8px; color: #000; font: 14px/1.8 Arial, sans-serif; background: white url("images/co-vietnam.png") no-repeat fixed center center; }
+#background-audio { display: none; }
+.sound-control { position: fixed; bottom: 12px; left: 12px; z-index: 100; display: flex; align-items: center; justify-content: center; width: 36px; height: 36px; padding: 0; border: 0; border-radius: 50%; background: #ff6b75; color: white; cursor: pointer; box-shadow: 0 1px 3px rgba(0, 0, 0, .25); }
+.back-to-top, .back-to-top:visited { position: fixed; bottom: 20px; right: 20px; z-index: 100; display: grid; place-items: center; width: 48px; height: 48px; border-radius: 50%; background: #ff6b75; color: white; font: 32px/1 Arial, sans-serif; text-decoration: none; }
+.back-to-top:hover { background: #ee5260; }
+.sound-control:hover { background: #f2f2f2; }
+.sound-control:focus-visible { outline: 2px solid #00e; outline-offset: 2px; }
+.sound-icon { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-linecap: round; stroke-linejoin: round; stroke-width: 2; }
+.sound-on { display: none; }
+.sound-control.is-on .sound-off { display: none; }
+.sound-control.is-on .sound-on { display: block; }
+h1 { margin: 0 0 8px; color: red; text-align: center; font-size: 26px; line-height: 1.3; }
+h2 { margin: 6px 0 18px; padding: 5px 15px; background: red; color: white; font-size: 18px; line-height: 1.5; }
+p { margin: 16px 0; }
+a { color: #00e; }
+a:visited, .page-nav > a, .column-top a { color: #551a8b; }
+a:focus-visible { outline: 2px solid #00e; outline-offset: 3px; }
+section { display: flow-root; }
+.overview { display: flow-root; }
+.map { position: relative; float: left; width: 240px; height: auto; aspect-ratio: 240 / 495; margin: 0 24px 10px 0; }
+.map-image { display: block; width: 100%; height: auto; }
+.map-hanoi { position: absolute; left: 34%; top: 12.5%; width: 13%; height: 5%; }
+.map-hanoi img { display: block; }
+.map-hue { position: absolute; left: 58%; top: 38%; width: 12%; height: 6%; }
+.map-hcm { position: absolute; left: 55%; top: 81%; width: 12%; height: 6%; border-radius: 50%; }
+.contents { margin: 0 0 10px 264px; padding: 0; }
+.overview p:last-child { margin-bottom: 0; }
+.world { float: right; width: 250px; height: auto; margin: 0 0 12px 12px; }
+.initial { float: left; width: 71px; height: 95px; object-fit: contain; }
+.hanoi .initial { height: 80px; }
+.lake { float: left; width: 24.5%; height: auto; margin: 0 15px 10px 0; }
+.mausoleum { float: right; width: 28.2%; height: auto; margin: 0 0 0 15px; }
+.hue h2 { background: #a000cc; }
+.bridge { clear: both; margin: 16px 0; text-align: center; }
+.bridge img { display: block; width: 715px; max-width: 100%; height: auto; margin: auto; }
+.bridge figcaption { margin-top: 20px; font-weight: bold; font-style: italic; }
+.palace { float: left; width: 32%; height: auto; margin: 0 15px 10px 0; }
+.corridor { float: right; width: 32%; height: auto; aspect-ratio: 16 / 9; margin: 0 0 10px 15px; }
+.hcm { min-height: calc(100vh - 8px); }
+.hcm h2 { margin-top: 5px; margin-bottom: 15px; background: #ff00cc; }
+.columns { column-count: 3; column-gap: 16px; column-rule: 1px dashed #aaa; }
+.columns p { margin: 0 0 16px; }
+.columns p:first-child { margin-top: 16px; }
+.columns .initial { width: 57px; height: 76px; }
+.market { display: block; width: calc(100% - 8px); height: auto; aspect-ratio: 3 / 2; margin: 0 0 16px; break-inside: avoid; }
+.column-top { text-align: right; }
+.page-nav { clear: both; display: flex; align-items: center; justify-content: space-between; min-height: 22px; margin: 16px 0 8px; }
+.nav-buttons { display: flex; gap: 8px; }
+.nav-buttons a, .nav-buttons img { display: block; width: 22px; height: 22px; }
+@media (max-width: 700px) {
+  h1 { font-size: 23px; }
+  h2 { font-size: 15px; padding: 5px; }
+  .map { width: 43%; margin-right: 20px; }
+  .contents { margin-left: 48%; font-size: 12px; }
+  .columns { column-count: 1; }
+  .world { width: 38%; }
+  .lake, .mausoleum, .palace, .corridor { width: 45%; }
+  .initial { width: 48px; height: 65px; }
+}

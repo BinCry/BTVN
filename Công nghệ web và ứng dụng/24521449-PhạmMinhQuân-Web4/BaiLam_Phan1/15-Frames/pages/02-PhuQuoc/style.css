@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #000000 url('images/hoang-hon-phu-quoc.jpg') no-repeat center top;
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    color: #ffffff;
+    min-height: 100vh;
+    padding: 30px 20px;
+}
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    border-radius: 8px;
+}
+h1.main-title {
+    color: #ffff00;
+    text-align: center;
+    font-size: 26px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-shadow: 2px 2px 4px #000000;
+}
+.intro-text {
+    font-style: italic;
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 16px;
+}
+.section-title {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 16px;
+    margin-bottom: 12px;
+    text-shadow: 1px 1px 3px #000000;
+}
+.title-red {
+    color: #ff0000;
+}
+.title-orange {
+    color: #ff9900;
+}
+.title-green {
+    color: #00ff00;
+}
+.title-pink {
+    color: #ff00ff;
+}
+p {
+    font-size: 13px;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 15px;
+    text-indent: 40px;
+}
+
+
+@media (max-width: 700px) { body { padding: 10px 12px; } h1.main-title { font-size: 23px; margin-bottom: 12px; } .intro-text { font-size: 11px; line-height: 1.8; } p { font-size: 12px; line-height: 1.8; } .section-title { font-size: 13px; } }

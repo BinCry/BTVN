@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Somewhere Coffee Shop - fresh coffee, pastries and a place to relax."
+    />
+    <title>Welcome To Our Coffee Shop | Somewhere Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="site">
+      <header>
+        <div class="hero" aria-label="Coffee shop slideshow">
+          <img
+            id="slide-image"
+            src="images/banner.jpg"
+            alt="The welcoming exterior of our coffee shop"
+          />
+          <span class="slide-count" id="slide-count">1 / 3</span>
+          <button class="arrow prev" type="button" aria-label="Previous slide">
+            &#10094;
+          </button>
+          <button class="arrow next" type="button" aria-label="Next slide">
+            &#10095;
+          </button>
+          <div class="caption" id="slide-caption">
+            Welcome To Our Coffee Shop
+          </div>
+        </div>
+        <div class="masthead">
+          <div class="dots">
+            <button
+              class="dot"
+              data-slide="0"
+              aria-label="Show slide 1"
+              aria-current="true"
+            ></button>
+            <button
+              class="dot"
+              data-slide="1"
+              aria-label="Show slide 2"
+              aria-current="false"
+            ></button>
+            <button
+              class="dot"
+              data-slide="2"
+              aria-label="Show slide 3"
+              aria-current="false"
+            ></button>
+            <button class="pause" type="button" aria-label="Pause slideshow">
+              Pause
+            </button>
+          </div>
+          <a class="brand" href="home.html">Somewhere Coffee Shop</a>
+        </div>
+      </header>
+      <div class="layout">
+        <aside class="sidebar">
+          <nav class="nav" aria-label="Main navigation">
+            <a href="home.html" aria-current="page">Home</a>
+            <a href="about.html">About</a>
+            <a href="location.html">Location</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <img
+            class="cup"
+            src="images/coffee_cup.jpg"
+            alt=""
+            width="304"
+            height="425"
+          />
+        </aside>
+        <main id="main">
+          <h1>About Somewhere Coffee Shop</h1>
+          <p>
+            Somewhere Coffee Co. began as a small coffee cart on the corner of
+            28th and 3rd street. As the lines began to grow, we thought
+            &quot;why not open a coffee shop?&quot; and expanded into our
+            current location. The rest is Somewhere in history. We have been in
+            the coffee business for 8 years and are masters at our craft. We
+            select only the finest beans to go into our blends and strive for
+            excellence in customer satisfaction. We offer quiet nooks for
+            sipping and reading your favorite book, catching up with old friends
+            or simply enjoying a cup outside and watching the world go by.
+            <br />
+            Whatever your coffee conundrum commands, find it at Somewhere.
+          </p>
+          <div class="photo-strip">
+            <img
+              src="images/coffee1.png"
+              alt="A fresh cup of coffee in the sunshine"
+            />
+            <img src="images/coffee2.jpg" alt="Freshly roasted coffee beans" />
+            <img
+              src="images/coffee3.jpg"
+              alt="The welcoming coffee shop interior"
+            />
+          </div>
+          <section id="news">
+            <h2>NEW Maui Wauwi Blends!</h2>
+            <p>
+              Straight from the sun drenched fields of Hawaii, we are proud to
+              bring you the very best. Our new Maui Wauwi blend combines the
+              subtle Sumatra aroma with the bold taste of Kona in one single
+              satisfying cup. For a limited time only.
+            </p>
+          </section>
+        </main>
+      </div>
+      <footer class="footer">
+        <div>
+          <a href="location.html#hours">Hours</a>
+          |
+          <a href="home.html#news">News</a>
+          |
+          <a href="menu.html">Products</a>
+          |
+          <a href="location.html#delivery">Services</a>
+          |
+          <a href="contact.html">Survey &amp; Feedback</a>
+        </div>
+        <span>&copy; 2022</span>
+      </footer>
+    </div>
+    <div class="flakes" aria-hidden="true">
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+    </div>
+  </body>
+</html>

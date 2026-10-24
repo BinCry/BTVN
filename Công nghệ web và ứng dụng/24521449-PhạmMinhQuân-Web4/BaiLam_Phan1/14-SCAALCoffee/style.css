@@ -1,0 +1,56 @@
+/* Web4: desktop, tablet and mobile layouts follow the supplied references. */
+:root { --coffee-gold: #c93; --coffee-teal: #287f80; }
+* { box-sizing: border-box; }
+body { margin: 0; color: #000; background: #fff; font-family: Arial, Helvetica, sans-serif; font-size: 16px; }
+.coffee-page { width: min(960px, 100%); margin: 8px auto 0; }
+.masthead { width: 700px; max-width: 100%; margin-bottom: 8px; }
+.masthead img { display: block; width: 100%; height: auto; }
+.coffee-layout { position: relative; display: grid; grid-template-columns: 192px minmax(0, 1fr); min-height: 700px; }
+.side-links { display: flex; flex-direction: column; gap: 50px; padding: 50px 0 220px 50px; }
+.side-links a { display: flex; align-items: center; justify-content: center; min-height: 60px; padding: 12px 8px; border: 1px solid #777; border-right: 0; color: #000; text-decoration: none; font-weight: bold; text-align: center; }
+.side-links a[aria-current="page"], .side-links a:hover { background: var(--coffee-gold); }
+a:focus-visible { outline: 3px solid #005f61; outline-offset: 3px; }
+.coffee-panel { display: grid; grid-template-columns: minmax(0, 1fr) 200px; align-content: start; gap: 24px; padding: 20px 86px 210px 24px; background: var(--coffee-gold); }
+.copy { min-width: 0; line-height: 1.85; }
+h1 { margin: 0; font-size: 40px; line-height: 1; font-weight: 400; }
+p { margin: 0; }
+.welcome { font-size: inherit; line-height: inherit; }
+.welcome span { font-size: 40px; line-height: 1; }
+.copy a, .copy strong { color: var(--coffee-teal); font-weight: 700; text-decoration: none; }
+.copy a:hover { text-decoration: underline; }
+.story { line-height: 1.15; }
+.coffee-images img { display: block; max-width: 100%; height: auto; }
+.coffee-images a { display: block; margin-top: 4px; }
+.globe { position: absolute; bottom: 0; left: 43px; display: flex; align-items: flex-end; pointer-events: none; }
+.globe img { display: block; height: auto; }
+.globe-a { width: 149px; }
+.globe-b { width: 251px; }
+@media (max-width: 1024px) {
+  body { font-size: 14px; }
+  .coffee-page { margin-top: 8px; }
+  .masthead { width: 100%; }
+  .coffee-layout { grid-template-columns: 30% minmax(0, 1fr); min-height: 700px; }
+  .side-links { padding-left: 22%; gap: 50px; }
+  .side-links a { min-height: 42px; border-color: #000; }
+  .coffee-panel { display: block; padding: 24px 24px 210px; }
+  .coffee-images { display: none; }
+  .globe { left: calc(30% - 149px); }
+}
+@media (max-width: 600px) {
+  .coffee-page { margin-top: 8px; }
+  .coffee-layout { display: block; min-height: 0; }
+  .side-links { display: flex; flex-direction: row; flex-wrap: wrap; gap: clamp(8px, 4vw, 24px); padding: 12px 10px 10px; }
+  .side-links a { min-height: 38px; padding: 9px 10px; border: 1px solid #000; font-size: 14px; }
+  .coffee-panel { min-height: calc(100dvh - 76px - 100vw * 60 / 700); padding: 24px 26px 160px; }
+  .copy, .story { line-height: 2; }
+  h1, .welcome span { font-size: 42px; }
+  .globe { left: 0; }
+  .globe .globe-a { display: none; }
+  .globe-b { width: min(251px, 75vw); }
+}
+@media (max-width: 380px) {
+  .side-links { gap: 8px; padding: 12px 8px; }
+  .side-links a { flex: 1; padding: 9px 3px; font-size: 13px; }
+  .coffee-panel { padding-left: 18px; padding-right: 18px; }
+  h1, .welcome span { font-size: 36px; }
+}

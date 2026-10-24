@@ -1,0 +1,24 @@
+body { margin: 0; background: white; color: #0865b5; font: 14px Arial, sans-serif; }
+main { width: min(580px, 82%); margin: 16px auto 35px; }
+h1 { margin: 0 0 18px; color: white; font-size: 30px; line-height: 1.3; text-align: center; text-shadow: 1px 1px 2px #357ca2, -1px -1px 2px #357ca2, 0 0 5px #82d3ef; }
+.registration-card { padding: 6px 14px; border: 2px solid #63d3ed; border-radius: 22px; background: white url('hinh/khuyen-mai.png') center bottom / 100% auto no-repeat; box-shadow: 8px 9px 20px #41cde4; }
+.field { display: grid; grid-template-columns: 44% minmax(0,1fr); align-items: center; gap: 9px; margin-bottom: 12px; }
+.field > label, .field > span { text-align: right; font-weight: bold; line-height: 1.3; }
+input:not([type=radio]), textarea, select { display: block; max-width: 100%; border: 1px solid #9ec7e2; border-radius: 9px; margin: 0; background: #acd6f999; color: #111; font: 13px Arial, sans-serif; }
+input:not([type=radio]) { width: 156px; height: 25px; padding: 3px 6px; }
+#full-name { width: 216px; }
+textarea { width: 224px; height: 54px; padding: 5px; resize: vertical; }
+.gender-field { min-height: 44px; }
+.gender-options { display: flex; flex-wrap: wrap; gap: 7px; }
+.gender-options label { display: inline-flex; align-items: center; gap: 5px; }
+.gender-options input { margin: 0; accent-color: #008cff; }
+#job { width: 82px; height: 27px; padding: 3px; }
+#product { width: 112px; height: 72px; border-radius: 0; padding: 3px; }
+.actions { display: flex; justify-content: center; gap: 5px; }
+button { border: 2px solid #00c8f5; border-radius: 10px; padding: 5px 16px; background: linear-gradient(#0067d0, #009dbc); color: white; font: bold 13px Arial, sans-serif; cursor: pointer; }
+button:hover { background: #0068b7; }
+input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid #222; outline-offset: 1px; }
+#form-status { text-align: center; line-height: 1.4; margin: 12px 0 0; overflow-wrap: anywhere; }
+#form-status:empty { display: none; }
+@media(max-width:700px) { main { margin-top: 16px; } h1 { font-size: 27px; margin-bottom: 14px; } .registration-card { padding: 6px 10px; border-radius: 18px; } .field { grid-template-columns: 42% minmax(0,1fr); font-size: 11px; margin-bottom: 12px; gap: 8px; } .gender-field { min-height: 36px; } #product { height: 78px; } button { padding: 5px 15px; font-size: 12px; } }
+@media(max-width:350px) { main { width: 94%; } }

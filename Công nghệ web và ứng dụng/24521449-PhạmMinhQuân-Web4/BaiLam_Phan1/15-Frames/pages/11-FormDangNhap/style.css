@@ -1,0 +1,15 @@
+body { min-height: 100vh; margin: 0; padding: 90px 0 30px; background: white; color: #111; font-family: Arial, sans-serif; }
+.login-box { width: min(570px, 80%); min-height: 220px; position: relative; margin: auto; padding: 25px 15px 15px; border: 1px dotted #a94444; border-radius: 16px; }
+.login-content { position: relative; z-index: 1; text-align: center; }
+h1 { margin: 0 0 24px; color: #d00; font-size: 26px; }
+form { width: min(290px, 100%); margin: auto; }
+.form-row { display: grid; grid-template-columns: 110px minmax(0, 1fr); align-items: center; gap: 7px; margin: 10px 0; font-size: 13px; }
+.form-row label { text-align: right; }
+input { width: 100%; height: 25px; border: 1px solid #ce7777; border-radius: 14px; padding: 2px 10px; background: #ffc4c499; font: 14px Arial, sans-serif; }
+button { margin-top: 0; border: 1px solid #b10000; border-radius: 18px; padding: 8px 9px; background: #e60000; color: white; font-weight: bold; font-size: 12px; cursor: pointer; }
+button:hover { background: #bc0000; }
+input:focus-visible, button:focus-visible { outline: 2px solid #111; outline-offset: 2px; }
+#greeting { margin: 12px 0 0; color: #d00; font-size: 14px; overflow-wrap: anywhere; }
+.login-image { position: absolute; width: 175px; height: 175px; object-fit: contain; right: 25px; top: 24px; }
+@media(max-width:700px) { .login-box { min-height: 190px; padding: 24px 12px 14px; } h1 { font-size: 24px; margin-bottom: 20px; } form { width: 290px; max-width: 100%; } .form-row { grid-template-columns: 40% minmax(0,1fr); font-size: 12px; } .login-image { width: 165px; height: 165px; right: 15px; top: 15px; } }
+@media(max-width:350px) { .login-box { width: 94%; } h1 { font-size: 22px; } }

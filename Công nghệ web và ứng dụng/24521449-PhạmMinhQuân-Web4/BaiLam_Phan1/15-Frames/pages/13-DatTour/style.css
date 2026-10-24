@@ -1,0 +1,29 @@
+body { display: flow-root; min-height: 100vh; margin: 0; background: #0873bd url('hinh/bg1.jpg') center / cover fixed no-repeat; color: blue; font: 13px Arial, sans-serif; text-shadow: 1px 1px 1px white; }
+body[data-background=bg1] { background-image: url('hinh/bg1.jpg'); } body[data-background=bg2] { background-image: url('hinh/bg2.jpg'); } body[data-background=bg3] { background-image: url('hinh/bg3.jpg'); }
+.travel-page { width: min(690px, 88%); margin: 12px auto 30px; }
+h1 { color: orange; font-size: 26px; text-align: center; margin: 0 0 16px; text-shadow: 1px 1px 2px white, 0 0 4px white; }
+.travel-form { border: 1px solid white; border-radius: 20px; padding: 8px 12px 6px; background: #ffffff66; box-shadow: 0 0 8px #fffc; }
+.field { display: grid; grid-template-columns: 26% minmax(0,1fr); align-items: center; gap: 10px; margin-bottom: 14px; }
+.field > label, .field > span { text-align: right; font-weight: bold; }
+input:not([type=checkbox]):not([type=radio]), textarea, select { display: block; max-width: 100%; border: 1px solid #fff8; border-radius: 10px; margin: 0; background: #ffa50040; color: blue; font: 13px Arial, sans-serif; padding: 4px 6px; }
+input:not([type=checkbox]):not([type=radio]) { width: 176px; height: 25px; }
+#traveler-name { width: 212px; }
+textarea { width: 235px; height: 40px; resize: vertical; }
+#tour { width: 250px; height: 27px; font-weight: bold; }
+#tour option, #tour optgroup { background: white; }
+.transport-options { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.transport-options label { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+input[type=checkbox], input[type=radio] { justify-self: start; width: 13px; height: 13px; margin: 0; accent-color: #008cff; }
+.guests { min-width: 0; margin: 20px 0 12px; padding: 24px 8px; border: 2px groove #ffffff88; }
+.guests legend { padding: 0 3px; }
+.guest-fields { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 8px; }
+.guest-count { display: flex; align-items: center; gap: 4px; }
+.guest-count input { width: 55px !important; }
+.note textarea { height: 54px; }
+button { display: block; margin: auto; width: 90px; min-height: 32px; border: 0; border-radius: 9px; background: orange; color: white; font: bold 14px Arial, sans-serif; cursor: pointer; }
+button:hover { background: #e58b00; }
+input:focus-visible, textarea:focus-visible, select:focus-visible, button:focus-visible { outline: 2px solid #222; outline-offset: 1px; }
+#travel-status { margin: 12px 0 0; color: #a00000; text-align: center; line-height: 1.4; }
+#travel-status:empty { display: none; }
+@media(max-width:700px) { body { background-image: url('hinh/bg3.jpg'); } .travel-page { margin-top: 14px; } h1 { font-size: 24px; } .travel-form { padding: 7px 10px; } .field { margin-bottom: 15px; font-size: 12px; gap: 9px; } .guests { padding: 24px 8px; font-size: 12px; } .note { margin-bottom: 18px; } }
+@media(max-width:380px) { .travel-page { width: 94%; } .field { grid-template-columns: 28% minmax(0,1fr); font-size: 11px; } .transport-options { gap: 6px; } .guest-count input { width: 45px !important; } }

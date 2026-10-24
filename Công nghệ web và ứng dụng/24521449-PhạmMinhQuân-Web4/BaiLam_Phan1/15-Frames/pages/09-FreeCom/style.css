@@ -1,0 +1,15 @@
+body { margin: 0; background: #00658c; font: 13px Arial, sans-serif; color: #176197; }
+main { width: 80%; min-height: 100vh; margin: auto; padding: 4px 0 20px; background: white; text-align: center; box-shadow: 0 0 14px #002b48; }
+.logo { display: block; max-width: 85%; margin: 0 auto 36px; }
+.banner { max-width: 100%; height: auto; border: 1px solid #a00000; }
+.intro { line-height: 1.8; margin: 30px 12px; }
+.members { display: flex; justify-content: space-around; align-items: flex-start; gap: 8px; padding: 0 18px; margin-top: 30px; }
+.members div { width: 48%; min-width: 0; }
+.members img { max-width: 100%; height: auto; }
+.members p { font-size: 11px; line-height: 1.4; margin: 12px 0; }
+.contact { margin: 30px 8px 0; font-size: 11px; }
+a { color: red; }
+.buttons { display: flex; flex-wrap: wrap; justify-content: space-around; gap: 8px; margin-top: 30px; }
+.buttons img { width: min(105px, 30%); object-fit: contain; }
+footer { margin: 12px 8px 0; color: #111; font: 11px 'Courier New', monospace; }
+@media(max-width:700px) { main { padding-top: 12px; } .intro { font-size: 8px; line-height: 3; margin: 30px 6px; } .members { padding: 0 5px; } .members p { font-size: 10px; } }

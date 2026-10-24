@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Bài tập ngôn ngữ HTML</title>
+<link rel="stylesheet" href="style.css">
+<script src="script.js" defer>
+</script>
+</head>
+<body>
+<header class="banner">
+<h1>Bài tập ngôn ngữ HTML</h1>
+</header>
+<nav class="top-nav" aria-label="Điều hướng chính">
+<a href="pages/gioithieu.html" target="noi-dung" class="intro-link" aria-current="page">Giới thiệu</a>
+<details class="nav-group">
+<summary>Cơ bản</summary>
+<div class="dropdown">
+<a href="pages/01-Me/index.html" target="noi-dung">Mẹ</a>
+<a href="pages/02-PhuQuoc/index.html" target="noi-dung">Phú Quốc</a>
+<a href="pages/03-DinhDangVanBan/index.html" target="noi-dung">Định dạng văn bản</a>
+<a href="pages/04-TruyenNguNgon/index.html" target="noi-dung">Truyện ngụ ngôn</a>
+<a href="pages/05-ShopHoaTuoi/index.html" target="noi-dung">Shop hoa tươi</a>
+<a href="pages/06-ExciteHome/index.html" target="noi-dung">Excite@Home</a>
+<a href="pages/09-FreeCom/index.html" target="noi-dung">Free.com</a>
+<a href="pages/10-VietNam/index.html" target="noi-dung">Việt Nam</a>
+</div>
+</details>
+<details class="nav-group">
+<summary>Tables</summary>
+<div class="dropdown">
+<a href="pages/07-ChuongTrinhHoc/index.html" target="noi-dung">Chương trình học</a>
+<a href="pages/08-DoubleRich/index.html" target="noi-dung">Double Rich</a>
+</div>
+</details>
+<details class="nav-group">
+<summary>Forms</summary>
+<div class="dropdown">
+<a href="pages/11-FormDangNhap/index.html" target="noi-dung">Form đăng nhập</a>
+<a href="pages/12-PhieuDangKy/index.html" target="noi-dung">Phiếu đăng ký</a>
+<a href="pages/13-DatTour/index.html" target="noi-dung">Đặt tour</a>
+</div>
+</details>
+<button id="menu-toggle" aria-expanded="false" aria-controls="lessons" aria-label="Mở mục lục">☰</button>
+</nav>
+<div class="layout">
+<aside id="lessons" aria-label="Mục lục bài tập">
+<a href="pages/01-Me/index.html" target="noi-dung">Mẹ</a>
+<a href="pages/02-PhuQuoc/index.html" target="noi-dung">Phú Quốc</a>
+<a href="pages/03-DinhDangVanBan/index.html" target="noi-dung">Định dạng văn bản</a>
+<a href="pages/04-TruyenNguNgon/index.html" target="noi-dung">Truyện ngụ ngôn</a>
+<a href="pages/05-ShopHoaTuoi/index.html" target="noi-dung">Shop hoa tươi</a>
+<a href="pages/06-ExciteHome/index.html" target="noi-dung">Excite@Home</a>
+<a href="pages/07-ChuongTrinhHoc/index.html" target="noi-dung">Chương trình học</a>
+<a href="pages/08-DoubleRich/index.html" target="noi-dung">Double Rich</a>
+<a href="pages/09-FreeCom/index.html" target="noi-dung">Free.com</a>
+<a href="pages/10-VietNam/index.html" target="noi-dung">Việt Nam</a>
+<a href="pages/11-FormDangNhap/index.html" target="noi-dung">Form đăng nhập</a>
+<a href="pages/12-PhieuDangKy/index.html" target="noi-dung">Phiếu đăng ký</a>
+<a href="pages/13-DatTour/index.html" target="noi-dung">Đặt tour</a>
+<button id="sound" aria-pressed="false">♫ Bật nhạc nền</button>
+</aside>
+<main>
+<iframe name="noi-dung" title="Nội dung bài tập" src="pages/gioithieu.html">
+</iframe>
+</main>
+</div>
+<footer>
+<span>© 2025</span>
+<nav class="footer-links" aria-label="Liên kết cuối trang">
+<a href="pages/gioithieu.html" target="noi-dung">Giới thiệu</a> | <a href="pages/gioithieu.html#lien-he" target="noi-dung">Liên hệ</a> | <a href="pages/04-TruyenNguNgon/index.html" target="noi-dung">Giải trí</a>
+</nav>
+</footer>
+<audio id="music" src="audio/RomanceDeAmour-FrancisGoya.mp3" loop preload="none">
+</audio>
+</body>
+</html>

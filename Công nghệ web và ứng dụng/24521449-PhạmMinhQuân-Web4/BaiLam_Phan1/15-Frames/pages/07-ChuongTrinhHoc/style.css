@@ -1,0 +1,13 @@
+body { margin: 0; min-height: 100vh; padding-bottom: 45px; background: white url('images/truong_day_thiet_ke_do_hoa.jpg') no-repeat 22% bottom / min(650px, 100%) auto; font-family: Arial, sans-serif; }
+body::before { content: ''; display: block; height: 110px; background: url('images/nguyen-tac-trong-thiet-ke-do-hoa.jpg') repeat-x left top / auto 110px; }
+h1 { color: #00b600; text-shadow: 1px 1px 2px #398a29; font-size: 28px; text-align: center; margin: 8px 12px 20px; }
+table { width: min(570px, 88%); margin: auto; table-layout: fixed; border: 4px solid #00bb00; border-spacing: 2px; font-size: 14px; }
+.number-col { width: 9%; } .subject-col { width: 53%; } .period-col { width: 19%; }
+th, td { border: 1px solid #9ac277; padding: 5px 4px; }
+th { color: white; background: #00b900; }
+td:not(:nth-child(2)) { text-align: center; }
+tbody tr:nth-child(odd) { background: #ffffb7b8; }
+tbody tr:nth-child(even) { background: #7ffff5b8; }
+tbody tr:last-child { background: #ffb669b8; }
+@media(max-width:700px) { body { background-position: center bottom; background-size: 100% auto; } h1 { font-size: clamp(15px,3.6vw,20px); margin: 10px 6px 20px; } table { font-size: 12px; } th, td { padding: 5px 3px; } }
+@media(max-width:380px) { table { width: 96%; font-size: 11px; } .subject-col { width: 47%; } .period-col { width: 22%; } }

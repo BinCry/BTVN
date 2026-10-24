@@ -1,0 +1,5 @@
+/* Shared defaults only; each exercise owns its layout and media queries. */
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+body { min-width: 0; }
+input, textarea, select { min-width: 0; }

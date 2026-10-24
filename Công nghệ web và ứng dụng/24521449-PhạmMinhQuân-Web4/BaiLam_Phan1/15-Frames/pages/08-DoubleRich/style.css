@@ -1,0 +1,15 @@
+body { margin: 0; min-height: 100vh; background: #990000 url('images/nen-hoa-hong.png') no-repeat right bottom / auto min(80vh, 700px); color: white; font-family: Arial, sans-serif; }
+.woman { position: absolute; left: 0; top: 0; width: 30%; height: auto; }
+.rose { position: absolute; left: 7%; top: 350px; width: 23%; height: auto; }
+.card { position: relative; width: 60%; margin: 45px 10% 0 28%; border: 1px solid #cf5353; }
+header { width: 67%; height: 88px; padding: 15px 8px; background: red; display: flex; align-items: center; justify-content: flex-end; text-align: right; font-weight: bold; font-size: 21px; }
+.brand { min-height: 88px; background: #fccefc; color: red; }
+.brand h1 { width: 67%; margin: 0; padding: 25px 12px; font-size: 28px; text-align: center; }
+.gift { position: absolute; top: 0; right: 0; width: 33%; height: 176px; object-fit: contain; padding: 10px; background: #fccefc; }
+.columns { display: grid; grid-template-columns: 1fr 1fr; gap: 35px; padding: 40px 8%; font-size: 14px; line-height: 1.7; }
+.columns section { min-width: 0; }
+h2 { font-size: 14px; margin: 0; color: #ff2b13; }
+ul, ol { padding-left: 24px; margin: 0; }
+li { margin-bottom: 4px; }
+@media(max-width:700px) { .woman, .rose { display: none; } .card { width: calc(100% - 12px); margin: 8px auto; } header { font-size: 16px; height: 90px; text-align: center; justify-content: center; } .brand h1 { font-size: 23px; padding: 20px 10px; } .gift { height: 178px; padding: 8px; } .columns { grid-template-columns: 1fr; gap: 18px; font-size: 13px; padding: 35px 12%; } h2 { font-size: 13px; } }
+@media(max-width:380px) { header { font-size: 14px; } .brand h1 { font-size: 20px; } .columns { padding: 28px 8%; } }
