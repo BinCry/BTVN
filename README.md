@@ -60,7 +60,7 @@ BTVN/
 │   │           ├── 📂 pages/ (13 bài tập)
 │   │           ├── 📂 images/
 │   │           └── 📂 audio/
-│   └── 📂 24521449-PhạmMinhQuân-Web4/
+│   ├── 📂 24521449-PhạmMinhQuân-Web4/
 │       ├── 📂 BaiLam_Phan1/
 │       │   ├── 📂 14-SCAALCoffee/
 │       │   │   ├── 📄 index.html, story.html, products.html, thisweek.html
@@ -78,6 +78,13 @@ BTVN/
 │           ├── 📄 style.css, script.js
 │           ├── 📂 images/
 │           └── 📂 fonts/
+│   └── 📂 24521449-PhạmMinhQuân-Web5/
+│       ├── 📂 AirRed/
+│       │   ├── 📄 index.html, style.css, script.js
+│       │   └── 📂 images/
+│       └── 📂 SE-UIT/
+│           ├── 📄 index.html, style.css, script.js
+│           └── 📂 images/
 ├── 📄 .gitignore
 └── 📄 README.md
 ```
@@ -156,6 +163,18 @@ Web4 gồm hai thư mục bài nộp, có bố cục thích ứng với desktop,
 - **Somewhere Coffee Shop:** các trang Home, About, Location, Menu, Contact và chi tiết đồ uống. `index.html` và `home.html` cùng hiển thị trang chủ. Slideshow có nút chuyển ảnh, chọn ảnh và **Play/Pause**; trang đồ uống cho chọn kích cỡ, số lượng và tính tổng tiền.
 - Form liên hệ và đặt đồ uống là bản minh họa phía trình duyệt, chưa gửi dữ liệu đến máy chủ hoặc thực hiện thanh toán.
 - Tài nguyên cần thiết nằm trong từng phần. Hai ảnh `menu-reference.jpg` và `location-map-reference.jpg` đang được dùng để hiển thị ảnh sản phẩm và bản đồ, cần giữ trong bài nộp.
+
+### Web5 — giao diện responsive
+
+Web5 gồm hai bài thực hành với HTML, CSS và JavaScript tách riêng, hỗ trợ bố cục desktop và mobile:
+
+| Bài tập | File cần mở |
+| :--- | :--- |
+| AirRed | [AirRed/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web5/AirRed/index.html>) |
+| SE-UIT | [SE-UIT/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web5/SE-UIT/index.html>) |
+
+- **AirRed:** giao diện đặt vé máy bay với form tìm chuyến bay, menu responsive và các thao tác phía trình duyệt.
+- **SE-UIT:** trang giới thiệu Trung tâm Công nghệ Thông tin với điều hướng, form liên hệ và bố cục thích ứng trên thiết bị di động.
 
 ### Quy ước đặt tên bài nộp (Khuyến nghị):
 

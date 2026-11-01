@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SE - UIT - VNUHCM</title>
+    <link rel="icon" href="images/Logo_CNPM.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="https://se.uit.edu.vn" target="_blank" rel="noopener"><img src="images/Logo_CNPM_white.png" alt="SE-UIT logo">SE - UIT - VNUHCM</a>
+      <button class="menu-toggle" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+      <ul class="main-menu" id="main-menu">
+        <li><a href="#home">Home</a></li>
+        <li class="news-item"><button class="news-toggle" type="button" aria-expanded="false">News <span>⌄</span></button>
+          <ul class="submenu">
+            <li><a href="#">Overview</a></li>
+            <li class="news-item"><button type="button" aria-expanded="false">Departments of <span>⌄</span></button>
+              <ul class="submenu">
+                <li><a href="#">Software Development</a></li>
+                <li><a href="#">Virtual MT &amp; PT Game</a></li>
+                <li><a href="#">Multimedia Communications</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Science - Technology</a></li>
+            <li><a href="#">Featured Events</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a class="sign-up" href="#">Sign up</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="home">
+    <section class="hero" aria-labelledby="hero-title"><div class="hero-content container"><div><h1 id="hero-title">Better for your future!</h1><p>Joy is not a destination, but a part of the journey</p><a class="pill-button action-link" href="#">Get Started</a></div><img class="hero-image" src="images/banner.png" alt="Technology illustration"></div></section>
+    <section class="contact container" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading"><h2 id="contact-title">CONTACT</h2><p>Let us know what you want, and we will serve you well!</p></div>
+      <div class="contact-grid">
+        <section class="contact-panel"><div class="details"><div class="detail"><img src="images/location.png" alt=""><div><h3>Address:</h3><p>Room E7.2, Building E, UIT, Linh Xuan, HCMC</p></div></div><div class="detail"><img src="images/telephone.png" alt=""><div><h3>Call Us:</h3><p>(028) 37252002 - Internal 120</p></div></div><div class="detail"><img src="images/envelope.png" alt=""><div><h3>Email Us:</h3><p>se@uit.edu.vn</p></div></div></div><img class="uit-photo" src="images/SE-UIT.jpg" alt="SE-UIT team at the University of Information Technology"></section>
+        <form class="contact-panel feedback-form" id="feedback-form" action="feedback.php" method="post" novalidate>
+          <label class="field">Your Name<input name="name" type="text" required></label>
+          <label class="field">Your Email<input name="email" type="email" required></label>
+          <label class="field full">Subject<input name="subject" type="text" required></label>
+          <label class="field full">Message<textarea name="message" required></textarea></label>
+          <button class="pill-button" type="submit">Send Message</button>
+        </form>
+      </div>
+    </section>
+    <section class="newsletter" aria-labelledby="newsletter-title"><h2 id="newsletter-title">Join Our Newsletter</h2><p>Subscribe to our newsletter and receive the latest news about our products and services!</p><div class="subscribe-box"><input type="email" aria-label="Newsletter email"><a class="pill-button action-link" href="#">Subscribe</a></div></section>
+  </main>
+  <footer class="site-footer container"><div class="footer-grid"><div class="footer-brand">SE - UIT</div><div><p class="footer-heading">Useful Links</p></div><div><p class="footer-heading">Our Services</p></div><div><p class="footer-heading">Follow Us</p><div class="socials"><a href="https://x.com" target="_blank" rel="noopener" aria-label="X"><img src="images/x-twitter.svg" alt=""></a><a href="https://www.facebook.com" target="_blank" rel="noopener" aria-label="Facebook"><img src="images/facebook.svg" alt=""></a><a href="https://www.instagram.com" target="_blank" rel="noopener" aria-label="Instagram"><img src="images/instagram.svg" alt=""></a><a href="https://www.linkedin.com" target="_blank" rel="noopener" aria-label="LinkedIn"><img src="images/linkedin-in.svg" alt=""></a></div></div></div><div class="copyright">© Copyright <strong>Information Technology Center.</strong> All Rights Reserved<br>Designed by <span>Web Design Midterm Test</span></div></footer>
+  <button class="to-top" type="button" aria-label="Back to top">↑</button>
+    <script src="script.js" defer></script>
+</body>
+</html>

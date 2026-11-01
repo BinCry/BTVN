@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AirRed | Bay nhanh - Giá rẻ</title>
+    <link rel="icon" href="images/red-air-logo.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Điều hướng chính">
+      <a class="brand" href="#" aria-label="AirRed"><img src="images/white-air-logo.png" alt="">AirRed</a>
+      <button class="menu-toggle" type="button" aria-label="Mở menu" aria-expanded="false" aria-controls="main-menu"><span></span><span></span><span></span></button>
+      <ul class="nav-links" id="main-menu">
+        <li><a href="#top">Trang chủ</a></li>
+        <li><a href="#flights">Chuyến bay</a></li>
+        <li><a href="#">Khuyến mãi</a></li>
+        <li><a href="#">Liên hệ</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="container">
+        <h1 id="hero-title"><span>Đặt vé máy bay dễ dàng</span> <span>&amp; nhanh chóng</span></h1>
+        <p>Giá tốt mỗi ngày - Trải nghiệm tiện lợi cùng AirRed</p>
+      </div>
+    </section>
+    <section class="booking-card container" id="flights" aria-labelledby="booking-title">
+      <div class="booking-heading"><h2 id="booking-title">Tìm chuyến bay của bạn</h2></div>
+      <form class="booking-form" action="datve.php" method="post" id="booking-form">
+        <label class="field">Điểm đi
+          <select name="departure" required>
+            <optgroup label="Việt Nam (10)"><option selected>Tp. Hồ Chí Minh</option><option>Hà Nội</option><option>Huế</option><option>Đà Nẵng</option><option>Quy Nhơn</option><option>Đà Lạt</option><option>Nha Trang</option><option>Côn Đảo</option><option>Cần Thơ</option><option>Phú Quốc</option></optgroup>
+            <optgroup label="Úc (5)"><option>Adelade</option><option>Brisbane</option><option>Melbourne</option><option>Perth</option><option>Sydney</option></optgroup>
+            <optgroup label="Thái Lan (6)"><option>Bangkok</option><option>Chiang Mai</option><option>Chiang Rai</option><option>Hat Yai</option><option>Phuket</option><option>Udon Thani</option></optgroup>
+            <optgroup label="Hàn Quốc (3)"><option>Busan</option><option>Daegu</option><option>Seoul</option></optgroup>
+          </select>
+        </label>
+        <label class="field">Điểm đến
+          <select name="destination" required>
+            <optgroup label="Việt Nam (10)"><option>Tp. Hồ Chí Minh</option><option selected>Hà Nội</option><option>Huế</option><option>Đà Nẵng</option><option>Quy Nhơn</option><option>Đà Lạt</option><option>Nha Trang</option><option>Côn Đảo</option><option>Cần Thơ</option><option>Phú Quốc</option></optgroup>
+            <optgroup label="Úc (5)"><option>Adelade</option><option>Brisbane</option><option>Melbourne</option><option>Perth</option><option>Sydney</option></optgroup>
+            <optgroup label="Thái Lan (6)"><option>Bangkok</option><option>Chiang Mai</option><option>Chiang Rai</option><option>Hat Yai</option><option>Phuket</option><option>Udon Thani</option></optgroup>
+            <optgroup label="Hàn Quốc (3)"><option>Busan</option><option>Daegu</option><option>Seoul</option></optgroup>
+          </select>
+        </label>
+        <div class="field">
+          <label for="departure-display">Ngày đi</label>
+          <div class="date-field">
+            <input id="departure-display" class="date-display" type="text" placeholder="dd/mm/yy" inputmode="numeric" maxlength="8" autocomplete="off" required aria-label="Ngày đi, dd/mm/yy">
+            <input class="date-picker" type="date" name="departure_date" min="2000-01-01" max="2099-12-31" tabindex="-1" aria-hidden="true">
+            <button class="calendar-button" type="button" aria-label="Chọn ngày đi"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="1"></rect><path d="M8 2v6M16 2v6M4 10h16"></path></svg></button>
+          </div>
+        </div>
+        <div class="field">
+          <label for="return-display">Ngày về</label>
+          <div class="date-field">
+            <input id="return-display" class="date-display" type="text" placeholder="dd/mm/yy" inputmode="numeric" maxlength="8" autocomplete="off" required aria-label="Ngày về, dd/mm/yy">
+            <input class="date-picker" type="date" name="return_date" min="2000-01-01" max="2099-12-31" tabindex="-1" aria-hidden="true">
+            <button class="calendar-button" type="button" aria-label="Chọn ngày về"><svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="4" y="5" width="16" height="16" rx="1"></rect><path d="M8 2v6M16 2v6M4 10h16"></path></svg></button>
+          </div>
+        </div>
+        <button class="primary-button" type="submit">Tìm chuyến bay</button>
+      </form>
+    </section>
+    <section class="results container" aria-labelledby="results-title">
+      <h2 id="results-title">Kết quả gợi ý</h2>
+      <div class="flight-grid">
+        <article class="flight-card"><h3>Hà Nội → TP. Hồ Chí Minh</h3><p>Khởi hành: 07:00 | Hãng: Vietnam Airlines</p><p class="price">1.500.000 VND</p><button class="primary-button book-button" type="button">Đặt vé</button></article>
+        <article class="flight-card"><h3>Đà Nẵng → Hà Nội</h3><p>Khởi hành: 09:45 | Hãng: Vietjet Air</p><p class="price">990.000 VND</p><button class="primary-button book-button" type="button">Đặt vé</button></article>
+        <article class="flight-card"><h3>TP. Hồ Chí Minh → Phú Quốc</h3><p>Khởi hành: 12:30 | Hãng: Bamboo Airways</p><p class="price">1.250.000 VND</p><button class="primary-button book-button" type="button">Đặt vé</button></article>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><span class="footer-details">© 2025 AirRed Airlines | Hotline: 1900 6789 | Email:</span> <span class="footer-email">support@airred.vn</span></footer>
+  <button class="to-top" type="button" aria-label="Về đầu trang">↑</button>
+  <div class="notice" role="status" aria-live="polite"></div>
+    <script src="script.js" defer></script>
+</body>
+</html>
