@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Các biểu mẫu JavaScript theo giao diện bài tập mẫu." />
+    <title>Bài tập JavaScript 2</title>
+    <link rel="stylesheet" href="style.css?v=20261109-font2" />
+    <link rel="stylesheet" href="overrides.css?v=20261109-font2" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="page-header"><p>WEB5 · BÀI TẬP JAVASCRIPT</p><h1>Các biểu mẫu xử lý dữ liệu</h1><a href="#forms">Bắt đầu thực hành ↓</a></header>
+    <main id="forms" class="forms">
+      <section class="module warm">
+        <h2>DIỆN TÍCH HÌNH CHỮ NHẬT</h2>
+        <form id="rectangle-form" class="classic-form"><label>Chiều dài:<input name="length" type="number" value="15" min="0" step="any" required /></label><label>Chiều rộng:<input name="width" type="number" value="20" min="0" step="any" required /></label><label>Diện tích:<output id="rectangle-area">300</output></label><button>Tính</button></form>
+      </section>
+      <section class="module pink">
+        <h2>KẾT QUẢ HỌC TẬP</h2>
+        <form id="grade-form" class="classic-form"><label>Điểm HK1:<input name="first" type="number" value="7" min="0" max="10" step="0.1" required /></label><label>Điểm HK2:<input name="second" type="number" value="8.5" min="0" max="10" step="0.1" required /></label><label>Điểm trung bình:<output id="average">8</output></label><label>Kết quả:<output id="promotion">Được lên lớp</output></label><label>Xếp loại học lực:<output id="rank">Giỏi</output></label><button>Xem kết quả</button></form>
+      </section>
+      <section class="module blue lunar">
+        <h2>TÍNH NĂM ÂM LỊCH</h2>
+        <form id="lunar-form"><label>Năm dương lịch<input name="year" type="number" value="2007" step="1" required /></label><strong aria-hidden="true">⇒</strong><label>Năm âm lịch<output id="lunar-result">Đinh Hợi</output></label><button>Đổi năm</button></form>
+        <figure class="zodiac-picture" aria-live="polite">
+          <img id="zodiac-image" src="image/pig.svg" alt="Con giáp Hợi: con heo" width="140" height="140" />
+          <figcaption id="zodiac-caption">Đinh Hợi · Con heo</figcaption>
+        </figure>
+        <small class="lunar-credit">Ảnh: <a href="https://github.com/jdecked/twemoji">Twemoji</a> · <a href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0</a></small>
+        <details><summary>Quy luật tính Can - Chi</summary><p>Can: Giáp, Ất, Bính, Đinh, Mậu, Kỷ, Canh, Tân, Nhâm, Quý (n mod 10 tương ứng 4 → 3).</p><p>Chi: Tý, Sửu, Dần, Mẹo, Thìn, Tỵ, Ngọ, Mùi, Thân, Dậu, Tuất, Hợi (n mod 12 tương ứng 4 → 3).</p></details>
+      </section>
+      <section class="module coral">
+        <h2>TÍNH NGÀY TRONG THÁNG</h2>
+        <form id="days-form" class="inline-form"><label>Tháng/năm:<input name="month" type="number" value="6" min="1" max="12" step="1" required /> / <input name="year" type="number" value="2015" min="1" step="1" required /></label><button>Tính số ngày</button></form><output id="days-result" class="notice">Tháng 6 năm 2015 có 30 ngày</output>
+      </section>
+      <section class="module warm wide">
+        <h2>TÍNH TOÁN TRÊN DÃY SỐ</h2>
+        <form id="sequence-form" class="sequence"><div><label>Giới hạn của dãy số:</label><label>Số bắt đầu:<input name="start" type="number" value="1" step="1" required /></label><label>Số kết thúc:<input name="end" type="number" value="10" step="1" required /></label></div><div class="sequence-results"><b>Kết quả:</b><label>Tổng các số:<output id="sequence-sum">55</output></label><label>Tích các số:<output id="sequence-product">3628800</output></label><label>Tổng các số chẵn:<output id="sequence-even">30</output></label><label>Tổng các số lẻ:<output id="sequence-odd">25</output></label></div><button>Tính toán</button></form>
+      </section>
+      <section class="module blue multiplication">
+        <h2>IN BẢNG CỬU CHƯƠNG</h2>
+        <form id="multiplication-form" class="inline-form"><label>Bắt đầu từ:<input name="start" type="number" value="7" min="1" max="20" step="1" required /></label><label>Kết thúc tại:<input name="end" type="number" value="10" min="1" max="20" step="1" required /></label><button>In bảng cửu chương</button></form><p class="red-note">Kết quả sau khi nhấn <i>In bảng cửu chương</i></p><output id="multiplication-result" class="tables" aria-live="polite"></output>
+      </section>
+      <section class="module blue read-number">
+        <h2>ĐỌC SỐ</h2>
+        <form id="read-number-form" class="inline-form"><label>Nhập số (0 → 999)<input name="number" type="number" value="999" min="0" max="999" step="1" required /></label><button>Đọc số</button></form><label>Bằng chữ<output id="number-words">Chín Trăm Chín Mươi Chín</output></label>
+      </section>
+      <section class="module party">
+        <h2>TÍNH TIỀN</h2>
+        <div class="party-grid"><div><label for="menu-list">Thực đơn tiệc</label><select id="menu-list" multiple size="9" aria-label="Thực đơn tiệc"></select></div><div class="transfer-buttons"><button type="button" data-move="selected-right" aria-label="Chuyển món được chọn sang phải">›</button><button type="button" data-move="all-right" aria-label="Chuyển tất cả món sang phải">»</button><button type="button" data-move="selected-left" aria-label="Chuyển món được chọn sang trái">‹</button><button type="button" data-move="all-left" aria-label="Chuyển tất cả món sang trái">«</button></div><div><label for="chosen-list">Danh sách món ăn chọn</label><select id="chosen-list" multiple size="9" aria-label="Danh sách món ăn chọn"></select></div></div><button id="calculate-party" type="button">Tính tiền</button><output id="party-total" class="payment">Số tiền thanh toán là: 0 đồng</output>
+      </section>
+      <section class="module hobbies">
+        <h2>SỞ THÍCH CÁ NHÂN</h2>
+        <form id="hobbies-form"><fieldset><legend>Sở thích của bạn</legend><label><input type="checkbox" name="hobby" value="Du lịch" /> Du lịch</label><label><input type="checkbox" name="hobby" value="Nghe nhạc" /> Nghe nhạc</label><label><input type="checkbox" name="hobby" value="Mua sắm" /> Mua sắm</label><label><input type="checkbox" name="hobby" value="Xem phim" /> Xem phim</label><label><input type="checkbox" name="hobby" value="Thể thao" /> Thể thao</label><label><input type="checkbox" name="hobby" value="Đọc sách" /> Đọc sách</label></fieldset><fieldset><legend>Bạn thích màu gì nhất</legend><label><input type="radio" name="color" value="Trắng" /> Trắng</label><label><input type="radio" name="color" value="Đỏ" /> Đỏ</label><label><input type="radio" name="color" value="Đen" /> Đen</label><label><input type="radio" name="color" value="Tím" checked /> Tím</label><label><input type="radio" name="color" value="Xanh" /> Xanh</label><label><input type="radio" name="color" value="Vàng" /> Vàng</label></fieldset><button>Thông tin bạn chọn</button></form>
+      </section>
+      <section class="module weekday">
+        <h2>TÌM THỨ TRONG TUẦN</h2>
+        <form id="weekday-form"><fieldset><legend>Nhập Ngày/tháng/năm</legend><select name="day" aria-label="Ngày"></select> / <select name="month" aria-label="Tháng"></select> / <select name="year" aria-label="Năm"></select></fieldset><button>Tìm thứ trong tuần</button></form><output id="weekday-result" class="notice">Chọn ngày, tháng, năm rồi nhấn nút để xem kết quả.</output>
+      </section>
+    </main>
+    <dialog id="detail-dialog"><h2>Chi tiết đơn giá các món ăn</h2><div id="bill-details"></div><button id="close-dialog">Đóng</button></dialog>
+  </body>
+</html>

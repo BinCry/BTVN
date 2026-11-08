@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Somewhere Coffee Shop - fresh coffee, pastries and a place to relax."
+    />
+    <title>Somewhere Coffee Shop Locations | Somewhere Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="site">
+      <div class="appearance-controls" aria-label="Tùy chỉnh giao diện"><div class="theme-buttons" role="group" aria-label="Chọn theme"><button type="button" data-theme="gold">Nâu vàng</button><button type="button" data-theme="green">Xanh lá</button><button type="button" data-theme="rose">Đỏ hồng</button></div><label>Màu nền <select id="background-tone"><option value="light">Light Brown</option><option value="native" selected>Native Brown</option><option value="dark">Dark Brown</option></select></label></div>
+      <header>
+        <div class="hero" aria-label="Coffee shop slideshow">
+          <img
+            id="slide-image"
+            src="images/banner.jpg"
+            alt="The welcoming exterior of our coffee shop"
+          />
+          <span class="slide-count" id="slide-count">1 / 3</span>
+          <button class="arrow prev" type="button" aria-label="Previous slide">
+            &#10094;
+          </button>
+          <button class="arrow next" type="button" aria-label="Next slide">
+            &#10095;
+          </button>
+          <div class="caption" id="slide-caption">
+            Welcome To Our Coffee Shop
+          </div>
+        </div>
+        <div class="masthead">
+          <div class="dots">
+            <button
+              class="dot"
+              data-slide="0"
+              aria-label="Show slide 1"
+              aria-current="true"
+            ></button>
+            <button
+              class="dot"
+              data-slide="1"
+              aria-label="Show slide 2"
+              aria-current="false"
+            ></button>
+            <button
+              class="dot"
+              data-slide="2"
+              aria-label="Show slide 3"
+              aria-current="false"
+            ></button>
+            <button class="pause" type="button" aria-label="Pause slideshow">
+              Pause
+            </button>
+          </div>
+          <a class="brand" href="home.html">Somewhere Coffee Shop</a>
+        </div>
+      </header>
+      <div class="layout">
+        <aside class="sidebar">
+          <nav class="nav" aria-label="Main navigation">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="location.html" aria-current="page">Location</a>
+            <a href="menu.html">Menu</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <img
+            class="cup"
+            src="images/coffee_cup.jpg"
+            alt=""
+            width="304"
+            height="425"
+          />
+        </aside>
+        <main id="main">
+          <h1>Somewhere Coffee Shop Locations</h1>
+          <p>
+            We are conveniently located in lower manhattan with plans to expand
+            into Brooklyn in 2013
+            <br />
+            292 Union Square West at 13th St. New York, New York 10003
+            <br />
+            Telephone:
+            <a href="tel:+12125555555">212.555.5555</a>
+          </p>
+          <section id="delivery">
+            <h2>Takeout Available | Delivery Available</h2>
+            <p id="hours">
+              Delivery Payment: $12 minimum
+              <br />
+              Delivery Hours: Daily, 10am-midnight
+              <br />
+              Delivery Area: 8th St. to 26th St., Second Ave. to Seventh Ave.
+            </p>
+          </section>
+          <a
+            class="map-preview"
+            href="https://www.google.com/maps/search/?api=1&amp;query=Somewhere+Cafe+Quan+10+Ho+Chi+Minh"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open the map of Somewhere Cafe in Google Maps (new tab)"
+          ></a>
+          <p>
+            <a
+              href="https://www.google.com/maps/search/?api=1&amp;query=Somewhere+Cafe+Quan+10+Ho+Chi+Minh"
+              target="_blank"
+              rel="noopener"
+            >
+              View larger map
+            </a>
+          </p>
+        </main>
+      </div>
+      <footer class="footer">
+        <div>
+          <a href="location.html#hours">Hours</a>
+          |
+          <a href="home.html#news">News</a>
+          |
+          <a href="menu.html">Products</a>
+          |
+          <a href="location.html#delivery">Services</a>
+          |
+          <a href="contact.html">Survey &amp; Feedback</a>
+        </div>
+        <span>&copy; 2022</span>
+      </footer>
+    </div>
+    <div class="flakes" aria-hidden="true">
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+    </div>
+  </body>
+</html>

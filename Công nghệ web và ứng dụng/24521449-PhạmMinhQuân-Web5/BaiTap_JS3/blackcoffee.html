@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Somewhere Coffee Shop - fresh coffee, pastries and a place to relax."
+    />
+    <title>Black Coffee | Somewhere Coffee Shop</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">Skip to content</a>
+    <div class="site">
+      <div class="appearance-controls" aria-label="Tùy chỉnh giao diện"><div class="theme-buttons" role="group" aria-label="Chọn theme"><button type="button" data-theme="gold">Nâu vàng</button><button type="button" data-theme="green">Xanh lá</button><button type="button" data-theme="rose">Đỏ hồng</button></div><label>Màu nền <select id="background-tone"><option value="light">Light Brown</option><option value="native" selected>Native Brown</option><option value="dark">Dark Brown</option></select></label></div>
+      <header>
+        <div class="hero" aria-label="Coffee shop slideshow">
+          <img
+            id="slide-image"
+            src="images/banner.jpg"
+            alt="The welcoming exterior of our coffee shop"
+          />
+          <span class="slide-count" id="slide-count">1 / 3</span>
+          <button class="arrow prev" type="button" aria-label="Previous slide">
+            &#10094;
+          </button>
+          <button class="arrow next" type="button" aria-label="Next slide">
+            &#10095;
+          </button>
+          <div class="caption" id="slide-caption">
+            Welcome To Our Coffee Shop
+          </div>
+        </div>
+        <div class="masthead">
+          <div class="dots">
+            <button
+              class="dot"
+              data-slide="0"
+              aria-label="Show slide 1"
+              aria-current="true"
+            ></button>
+            <button
+              class="dot"
+              data-slide="1"
+              aria-label="Show slide 2"
+              aria-current="false"
+            ></button>
+            <button
+              class="dot"
+              data-slide="2"
+              aria-label="Show slide 3"
+              aria-current="false"
+            ></button>
+            <button class="pause" type="button" aria-label="Pause slideshow">
+              Pause
+            </button>
+          </div>
+          <a class="brand" href="home.html">Somewhere Coffee Shop</a>
+        </div>
+      </header>
+      <div class="layout">
+        <aside class="sidebar">
+          <nav class="nav" aria-label="Main navigation">
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="location.html">Location</a>
+            <a href="menu.html" aria-current="page">Menu</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+          <img
+            class="cup"
+            src="images/coffee_cup.jpg"
+            alt=""
+            width="304"
+            height="425"
+          />
+        </aside>
+        <main id="main">
+          <h1>Black Coffee</h1>
+          <div class="order-layout">
+            <div class="gallery">
+              <div
+                class="product-photo black large"
+                id="product-photo"
+                role="img"
+                aria-label="Black Coffee"
+              ></div>
+              <div class="thumbs">
+                <button
+                  class="thumb"
+                  type="button"
+                  data-photo="black"
+                  aria-label="View Black Coffee"
+                  aria-pressed="true"
+                >
+                  <span class="product-photo black"></span>
+                </button>
+                <button
+                  class="thumb"
+                  type="button"
+                  data-photo="breve"
+                  aria-label="View Cafe Breve"
+                  aria-pressed="false"
+                >
+                  <span class="product-photo breve"></span>
+                </button>
+                <button
+                  class="thumb"
+                  type="button"
+                  data-photo="espresso"
+                  aria-label="View Espresso"
+                  aria-pressed="false"
+                >
+                  <span class="product-photo espresso"></span>
+                </button>
+              </div>
+            </div>
+            <form class="order-form">
+              <div class="order-controls">
+                <input
+                  type="number"
+                  name="quantity"
+                  value="1"
+                  min="1"
+                  max="99"
+                  step="1"
+                  required
+                  aria-label="Quantity"
+                />
+                <select name="size" aria-label="Cup size">
+                  <option value="2">$2.0 (S)</option>
+                  <option value="2.5">$2.5 (M)</option>
+                  <option value="3">$3.0 (L)</option>
+                </select>
+              </div>
+              <p class="price-summary">
+                Total:
+                <output id="total">$2.00</output>
+              </p>
+              <button class="button" type="submit">Buy</button>
+            </form>
+          </div>
+          <p class="status" id="order-status" role="status"></p>
+          <section>
+            <h2>Benefits &amp; Effects</h2>
+            <p>
+              You may love your
+              <strong>black coffee</strong>
+              in the morning to help you feel energized and get ready for the
+              day, but how much do you know about it? Do you know how drinking
+              <strong>black coffee</strong>
+              affects your body and your mind? Are you aware of the benefits of
+              <strong>black coffee</strong>
+              and its side effects?
+            </p>
+            <p>
+              <strong>Black coffee</strong>
+              is simply coffee that is normally brewed without the addition of
+              additives such as sugar, milk, cream, or added flavors. While it
+              has a slightly bitter taste compared to when it is flavored with
+              additives, many people love a strong cup of
+              <strong>black coffee</strong>
+              . In fact, for some, it is part of their everyday diet.
+            </p>
+            <p>
+              In this article, we talk about the benefits of drinking
+              <strong>black coffee</strong>
+              , how it can help you in losing weight, potential side effects, as
+              well as how to make the perfect cup of
+              <strong>black coffee</strong>
+              .
+            </p>
+          </section>
+          <a class="back" href="menu.html">&larr; Back to menu</a>
+        </main>
+      </div>
+      <footer class="footer">
+        <div>
+          <a href="location.html#hours">Hours</a>
+          |
+          <a href="home.html#news">News</a>
+          |
+          <a href="menu.html">Products</a>
+          |
+          <a href="location.html#delivery">Services</a>
+          |
+          <a href="contact.html">Survey &amp; Feedback</a>
+        </div>
+        <span>&copy; 2022</span>
+      </footer>
+    </div>
+    <div class="flakes" aria-hidden="true">
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+      <span>&#10052;</span>
+    </div>
+  </body>
+</html>

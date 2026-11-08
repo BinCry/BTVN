@@ -82,8 +82,20 @@ BTVN/
 │       ├── 📂 AirRed/
 │       │   ├── 📄 index.html, style.css, script.js
 │       │   └── 📂 images/
-│       └── 📂 SE-UIT/
-│           ├── 📄 index.html, style.css, script.js
+│       ├── 📂 SE-UIT/
+│       │   ├── 📄 index.html, style.css, script.js
+│       │   └── 📂 images/
+│       ├── 📂 BaiTap_JS1/
+│       │   ├── 📄 index.html, style.css, script.js
+│       │   └── 📄 mobile-menu.css
+│       ├── 📂 BaiTap_JS2/
+│       │   ├── 📄 index.html, style.css, overrides.css, script.js
+│       │   ├── 📂 fonts/ (Noto Sans)
+│       │   └── 📂 image/ (12 con giáp)
+│       └── 📂 BaiTap_JS3/ (Somewhere Coffee Shop mở rộng)
+│           ├── 📄 index.html, home.html, about.html, location.html, menu.html
+│           ├── 📄 contact.html, blackcoffee.html, style.css, script.js
+│           ├── 📂 fonts/
 │           └── 📂 images/
 ├── 📄 .gitignore
 └── 📄 README.md
@@ -164,17 +176,23 @@ Web4 gồm hai thư mục bài nộp, có bố cục thích ứng với desktop,
 - Form liên hệ và đặt đồ uống là bản minh họa phía trình duyệt, chưa gửi dữ liệu đến máy chủ hoặc thực hiện thanh toán.
 - Tài nguyên cần thiết nằm trong từng phần. Hai ảnh `menu-reference.jpg` và `location-map-reference.jpg` đang được dùng để hiển thị ảnh sản phẩm và bản đồ, cần giữ trong bài nộp.
 
-### Web5 — giao diện responsive
+### Web5 — giao diện responsive và JavaScript
 
-Web5 gồm hai bài thực hành với HTML, CSS và JavaScript tách riêng, hỗ trợ bố cục desktop và mobile:
+Web5 gồm các bài thực hành HTML5, CSS3 và JavaScript thuần; các trang hỗ trợ bố cục desktop và mobile:
 
 | Bài tập | File cần mở |
 | :--- | :--- |
 | AirRed | [AirRed/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web5/AirRed/index.html>) |
 | SE-UIT | [SE-UIT/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web5/SE-UIT/index.html>) |
+| Bài tập JavaScript 1 | [BaiTap_JS1/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web5/BaiTap_JS1/index.html>) |
+| Bài tập JavaScript 2 | [BaiTap_JS2/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web5/BaiTap_JS2/index.html>) |
+| Bài tập JavaScript 3 | [BaiTap_JS3/index.html](<Công nghệ web và ứng dụng/24521449-PhạmMinhQuân-Web5/BaiTap_JS3/index.html>) |
 
 - **AirRed:** giao diện đặt vé máy bay với form tìm chuyến bay, menu responsive và các thao tác phía trình duyệt.
 - **SE-UIT:** trang giới thiệu Trung tâm Công nghệ Thông tin với điều hướng, form liên hệ và bố cục thích ứng trên thiết bị di động.
+- **Bài tập JavaScript 1:** giao diện chọn bài; thực hành 10 nhóm hàm gồm hình học, UCLN/BCNN, kiểm tra số, mảng, chuỗi, phương trình và tam giác số. Trên mobile, danh sách bài chuyển thành hộp chọn gọn.
+- **Bài tập JavaScript 2:** các biểu mẫu tính toán theo mẫu bài tập: diện tích, kết quả học tập, Can-Chi kèm hình con giáp, ngày trong tháng, dãy số, bảng cửu chương, đọc số, tính tiền, sở thích và thứ trong tuần. Font Noto Sans được lưu trong thư mục bài để hiển thị tiếng Việt ổn định khi mở offline.
+- **Bài tập JavaScript 3:** phiên bản Somewhere Coffee Shop từ Web4 được mở rộng với ba theme (nâu vàng, xanh lá, đỏ hồng) và ba mức màu nền (Light Brown, Native Brown, Dark Brown). Lựa chọn giao diện được lưu khi chuyển giữa các trang.
 
 ### Quy ước đặt tên bài nộp (Khuyến nghị):
 

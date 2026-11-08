@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Bài tập JavaScript cơ bản - 10 bài có thể chạy trực tiếp." />
+    <title>Bài tập JavaScript 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mobile-menu.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="hero">
+      <div class="hero__inner">
+        <p class="eyebrow">WEB5 · JAVASCRIPT CƠ BẢN</p>
+        <h1>Phòng thực hành thuật toán</h1>
+        <p>Chọn một bài ở thanh bên, nhập dữ liệu và xem toàn bộ kết quả ngay bên dưới.</p>
+      </div>
+    </header>
+    <div class="app-shell">
+      <aside class="exercise-menu" aria-label="Danh sách bài tập">
+        <p class="menu-title">Chọn bài để chạy</p>
+        <label class="mobile-exercise-select" for="exercise-picker">Bài tập đang mở
+          <select id="exercise-picker">
+            <option value="exercise-1">01 · Hình học</option>
+            <option value="exercise-2">02 · UCLN &amp; BCNN</option>
+            <option value="exercise-3">03 · Kiểm tra số</option>
+            <option value="exercise-4">04 · Dãy số nguyên tố</option>
+            <option value="exercise-5">05 · Tổng luân phiên</option>
+            <option value="exercise-6">06 · Phương trình</option>
+            <option value="exercise-7">07 · Mảng số nguyên</option>
+            <option value="exercise-8">08 · Tam giác số</option>
+            <option value="exercise-9">09 · Chuỗi</option>
+            <option value="exercise-10">10 · Mảng chuỗi</option>
+          </select>
+        </label>
+        <nav id="exercise-nav">
+          <button class="active" data-target="exercise-1">01 · Hình học</button>
+          <button data-target="exercise-2">02 · UCLN & BCNN</button>
+          <button data-target="exercise-3">03 · Kiểm tra số</button>
+          <button data-target="exercise-4">04 · Dãy số nguyên tố</button>
+          <button data-target="exercise-5">05 · Tổng luân phiên</button>
+          <button data-target="exercise-6">06 · Phương trình</button>
+          <button data-target="exercise-7">07 · Mảng số nguyên</button>
+          <button data-target="exercise-8">08 · Tam giác số</button>
+          <button data-target="exercise-9">09 · Chuỗi</button>
+          <button data-target="exercise-10">10 · Mảng chuỗi</button>
+        </nav>
+      </aside>
+      <main>
+        <section class="exercise active" id="exercise-1">
+          <div class="section-heading"><span>01</span><div><h2>Tính diện tích và chu vi</h2><p>Hình vuông, hình tròn hoặc tam giác ba cạnh.</p></div></div>
+          <form id="geometry-form" class="form-grid">
+            <label>Loại hình<select name="shape"><option value="square">Hình vuông</option><option value="circle">Hình tròn</option><option value="triangle">Tam giác</option></select></label>
+            <div id="shape-inputs" class="input-group"></div>
+            <button class="primary" type="submit">Tính kết quả</button>
+          </form>
+          <output id="geometry-result" class="result" aria-live="polite">Nhập dữ liệu để bắt đầu.</output>
+        </section>
+        <section class="exercise" id="exercise-2">
+          <div class="section-heading"><span>02</span><div><h2>Ước chung lớn nhất & bội chung nhỏ nhất</h2><p>Nhập hai số nguyên (không đồng thời bằng 0).</p></div></div>
+          <form id="gcd-form" class="form-grid compact"><label>Số a<input name="a" type="number" value="24" step="1" required /></label><label>Số b<input name="b" type="number" value="36" step="1" required /></label><button class="primary">Tìm UCLN & BCNN</button></form>
+          <output id="gcd-result" class="result" aria-live="polite"></output>
+        </section>
+        <section class="exercise" id="exercise-3">
+          <div class="section-heading"><span>03</span><div><h2>Kiểm tra tính chất số nguyên</h2><p>Số nguyên tố, số chính phương và số hoàn hảo.</p></div></div>
+          <form id="properties-form" class="form-grid compact"><label>Số nguyên n<input name="n" type="number" value="28" step="1" required /></label><button class="primary">Kiểm tra</button></form>
+          <output id="properties-result" class="result" aria-live="polite"></output>
+        </section>
+        <section class="exercise" id="exercise-4">
+          <div class="section-heading"><span>04</span><div><h2>Liệt kê số nguyên tố</h2><p>Xuất các số nguyên tố từ 1 đến n.</p></div></div>
+          <form id="primes-form" class="form-grid compact"><label>Giới hạn n<input name="n" type="number" value="50" min="1" step="1" required /></label><button class="primary">Xuất dãy</button></form>
+          <output id="primes-result" class="result result--list" aria-live="polite"></output>
+        </section>
+        <section class="exercise" id="exercise-5">
+          <div class="section-heading"><span>05</span><div><h2>Tổng luân phiên</h2><p>S = −1¹ + 2² − 3³ + … + (−1)ⁿ × nⁿ.</p></div></div>
+          <form id="series-form" class="form-grid compact"><label>Số nguyên n<input name="n" type="number" value="5" min="1" max="100" step="1" required /></label><button class="primary">Tính tổng</button></form>
+          <output id="series-result" class="result" aria-live="polite"></output>
+        </section>
+        <section class="exercise" id="exercise-6">
+          <div class="section-heading"><span>06</span><div><h2>Giải phương trình</h2><p>Hiển thị kết quả phương trình bậc một và bậc hai, kể cả trường hợp suy biến.</p></div></div>
+          <form id="equation-form" class="form-grid compact"><label>Hệ số a<input name="a" type="number" value="1" step="any" required /></label><label>Hệ số b<input name="b" type="number" value="-3" step="any" required /></label><label>Hệ số c<input name="c" type="number" value="2" step="any" required /></label><button class="primary">Giải phương trình</button></form>
+          <output id="equation-result" class="result" aria-live="polite"></output>
+        </section>
+        <section class="exercise" id="exercise-7">
+          <div class="section-heading"><span>07</span><div><h2>Xử lý mảng số nguyên</h2><p>Nhập các số, cách nhau bằng dấu phẩy hoặc khoảng trắng.</p></div></div>
+          <form id="numbers-form" class="form-grid"><label>Phần tử mảng<textarea name="numbers" rows="3" required>8, -3, 12, 0, 5, 2, -9</textarea></label><button class="primary">Xử lý mảng</button></form>
+          <output id="numbers-result" class="result" aria-live="polite"></output>
+        </section>
+        <section class="exercise" id="exercise-8">
+          <div class="section-heading"><span>08</span><div><h2>Tam giác số tăng dần</h2><p>n nguyên, 0 &lt; n &lt; 10; đồng thời tính ba tổng theo yêu cầu.</p></div></div>
+          <form id="triangle-form" class="form-grid compact"><label>Chiều cao n<input name="n" type="number" value="4" min="1" max="9" step="1" required /></label><button class="primary">Tạo tam giác</button></form>
+          <output id="triangle-result" class="result result--triangle" aria-live="polite"></output>
+        </section>
+        <section class="exercise" id="exercise-9">
+          <div class="section-heading"><span>09</span><div><h2>Xử lý chuỗi</h2><p>Đảo ngược chuỗi và chuyển toàn bộ sang chữ in hoa.</p></div></div>
+          <form id="string-form" class="form-grid"><label>Chuỗi cần xử lý<input name="text" value="Hello JavaScript" required /></label><button class="primary">Xử lý chuỗi</button></form>
+          <output id="string-result" class="result" aria-live="polite"></output>
+        </section>
+        <section class="exercise" id="exercise-10">
+          <div class="section-heading"><span>10</span><div><h2>Xử lý mảng chuỗi</h2><p>Sắp xếp A–Z và tìm vị trí chuỗi dài nhất (tính từ 1).</p></div></div>
+          <form id="strings-form" class="form-grid"><label>Các chuỗi (phân cách bằng dấu phẩy)<textarea name="strings" rows="3" required>cam, quả thanh long, bưởi, táo</textarea></label><button class="primary">Xử lý mảng</button></form>
+          <output id="strings-result" class="result" aria-live="polite"></output>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

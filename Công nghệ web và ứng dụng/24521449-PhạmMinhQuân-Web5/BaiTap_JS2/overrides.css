@@ -1,0 +1,35 @@
+/* Local Vietnamese-capable font, shared by every form and result. */
+@font-face {
+  font-family: "BaiTap Noto Sans";
+  src: url("fonts/noto-sans.ttf") format("truetype");
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+}
+html {
+  font-family: "BaiTap Noto Sans", sans-serif;
+  font-synthesis: none;
+}
+body, body * {
+  font-family: "BaiTap Noto Sans", sans-serif !important;
+  font-style: normal;
+  letter-spacing: normal;
+  word-spacing: normal;
+}
+.module h2, .pink h2 {
+  font-size: clamp(1.15rem, 2.5vw, 1.55rem) !important;
+  font-style: normal !important;
+  font-weight: 700 !important;
+  letter-spacing: 0 !important;
+  word-spacing: normal !important;
+  white-space: normal !important;
+}
+
+.module h2 { line-height: 1.5; padding-block: 8px; }
+input, select, button, output, label, legend { line-height: 1.5; }
+.module, fieldset, label { min-width: 0; }
+.hobbies label { white-space: normal; }
+.zodiac-picture { margin: 16px auto 0; text-align: center; }
+.zodiac-picture img { display: block; width: 140px; height: 140px; max-width: 100%; margin: auto; object-fit: contain; }
+.zodiac-picture figcaption { margin-top: 8px; font-weight: bold; }
+.lunar-credit { display: block; text-align: center; margin-top: 6px; font-size: 11px; }
